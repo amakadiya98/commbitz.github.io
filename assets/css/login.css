@@ -14,6 +14,9 @@
     padding: 80px 100px;
     position: relative;
 }
+.travel-information .main-form-part{
+    padding: 60px;
+}
 .main-form-part .close-modal-btn {
     position: absolute;
     right: 35px;
@@ -24,6 +27,13 @@
     font-weight: 400;
     background-color: transparent;
     border: 0;
+}
+.main-form-part .close-modal-btn img{
+    width: 60%;
+}
+.travel-information .main-form-part .close-modal-btn{
+    right: 25px;
+    top:25px;
 }
 .login-tab-content-part .nav-pills{
     margin-bottom: 0;
@@ -170,7 +180,100 @@
 button:hover{
     opacity: 0.8;
 }
+/* travel information */
+.travel-information-content-part p{
+    font-family: 'Helvetica Neue';
+    color: var(--white);
+    font-size: 24px;
+    line-height: 32px;
+}
+.travel-information-content-part .travel-part{
+    margin-top: 38px;
+}
+.travel-data-filed{
+    margin-top: 36px;
+}
 
+.travel-information-content-part .custom-drop-down .country-down-btn{
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #00CAF9;
+    border-radius: 12px;
+    opacity: 1;
+    text-align: left;
+    font-family: 'Helvetica Neue';
+    font-size: 18px;
+    line-height: 22px;
+    color: #666666;
+    padding: 12px 18px;
+}
+.travel-information-content-part .field-data{
+    margin-bottom: 25px;
+}
+.travel-information-content-part .custom-drop-down .country-down-btn:focus{
+    border: 1px solid var(--primary);
+}
+.input-field-data{
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #00CAF9;
+    border-radius: 12px;
+    opacity: 1;
+    text-align: left;
+    font-family: 'Helvetica Neue';
+    font-size: 18px;
+    line-height: 22px;
+    color: #666666;
+    padding: 12px 18px;
+}
+.input-field-data:focus{
+    border: 1px solid var(--primary);
+}
+.input-field-data.short-field{
+    width: 65%;
+}
+.field-data.combine-field{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.field-data.combine-field .send-otp{
+    font-family: 'Helvetica Neue';
+    font-size: 24px;
+    line-height: 23px;
+    color: var(--white);
+    padding: 8px 20px;
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    background-color: transparent;
+    min-width: 154px;
+}
+.field-data.combine-field .send-otp.green{
+    color: var(--black);
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+.custom-drop-down .dropdown-toggle::after{
+    border: 0;
+    content: "";
+    background-image: url('../images/down.svg');
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 12px;
+    opacity: 0.7;
+}
+.custom-drop-down .dropdown-menu{
+    width: 100%;
+} 
+.travel-information-content-part .custom-drop-down .dropdown-menu .flag-size img{
+    width: 25px;
+    margin-right: 10px;
+}
+.travel-information-content-part .custom-drop-down .dropdown-menu .flag-size:hover{
+    opacity: 1 !important;
+}
 @media screen and (max-width: 1440px){
     .login-content-part{
         max-width: 80%;
@@ -214,6 +317,9 @@ button:hover{
     .main-form-part {
         padding: 60px 40px;
     }
+    .travel-information .main-form-part {
+        padding: 60px 30px;
+    }
     .scanner-block .scan-block {
         width: 90%;
     }
@@ -229,7 +335,7 @@ button:hover{
     .main-form-part .close-modal-btn img{
         width: 60%;
     }
-    .main-form-part .close-modal-btn{
+    .main-form-part .close-modal-btn, .travel-information .main-form-part .close-modal-btn {
         right:10px;
         top: 10px;
     }
@@ -248,5 +354,27 @@ button:hover{
     }
     .login-content-part .inner-form-part .form-part .login-with-part .icon-part a {
         margin-right: 12px;
+    }
+    .travel-information-content-part .field-data {
+        margin-bottom: 10px;
+    }
+    .travel-information-content-part p{
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+    .field-data.combine-field .send-otp{
+        font-size: 18px;
+        line-height: 20px;
+        min-width: 110px;
+        padding: 4px 10px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .field-data.combine-field{
+        flex-wrap: wrap;
+    }
+    .input-field-data.short-field{
+        width: 100%;
     }
 }

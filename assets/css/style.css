@@ -2188,7 +2188,12 @@ footer .right-part .bottom-side .text-one a {
     height: 300px;
   }
 }
-
+@media screen and (max-width: 375px){
+  .sim-tab-part .nav-pills .nav-link {    
+      min-width: 72px;
+      margin-right: 6px;
+  }
+}
 .sim-tab-part .tb-card .text-row p i{
   width: 20px;
   font-size: 20px;
