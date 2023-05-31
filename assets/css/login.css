@@ -1,0 +1,252 @@
+:root {
+    --primary: #00FF9D;
+    --white: #ffffff;
+    --black: #000;
+    --theme-blue: #00CAF9;
+  }
+.login-content-part{
+    margin: 60px auto;
+    max-width: 60%;
+}
+.main-form-part{
+    border: 2px solid var(--primary);
+    border-radius: 42px;
+    padding: 80px 100px;
+    position: relative;
+}
+.main-form-part .close-modal-btn {
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    font-size: 28px;
+    color: white;
+    opacity: 0.7;
+    font-weight: 400;
+    background-color: transparent;
+    border: 0;
+}
+.login-tab-content-part .nav-pills{
+    margin-bottom: 0;
+}
+.login-tab-content-part .nav-pills .nav-link.active{
+    background-color: var(--primary);
+    color: var(--black);
+    font-size: 24px;
+    padding: 4px 32px 8px 32px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+    font-family: 'Helvetica Neue';
+}
+.login-content-part .nav-pills .nav-link{
+    font-size: 35px;
+    line-height: 41px;
+    color: var(--white);
+    font-family: 'Helvetica Neue';
+    margin: 0;
+    margin-right: 34px;
+    padding: 0;
+}
+.login-content-part .inner-form-part{
+    margin-top: 38px;
+}
+.login-content-part .inner-form-part .form-part{
+    max-width: 80%;
+}
+.login-content-part .inner-form-part .form-part .input-field{
+    padding: 12px 15px;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    width: 100%;
+    font-family: 'Helvetica Neue';
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+.login-content-part .inner-form-part .form-part  .otp-field-btn{
+    font-family: 'Helvetica Neue';
+    font-size: 24px;
+    color: var(--white);
+    border: 1px solid var(--white);
+    background: transparent;
+    padding: 6px 6px;
+    border-radius: 25px;
+    margin-bottom: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 130px;
+    height: 44px;
+}
+.login-content-part .inner-form-part .form-part .checkbox-with-text {
+    margin-bottom: 20px;
+}
+.login-content-part .inner-form-part .form-part .checkbox-with-text label{
+    color: var(--white);
+    font-family: 'Helvetica Neue';
+    font-size: 18px;
+    line-height: 22px;
+}
+.login-content-part .inner-form-part .form-part .login-btn{
+    font-family: 'Helvetica Neue';
+    font-size: 24px;
+    color: var(--black);
+    border: 1px solid var(--primary);
+    background: var(--primary);
+    padding: 6px 6px;
+    border-radius: 25px;
+    margin-bottom: 38px;
+    min-width: 130px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-content-part .inner-form-part .form-part .login-with-part{
+    display: flex;
+    align-items: center;}
+.login-content-part .inner-form-part .form-part .login-with-part p{
+    margin-bottom: 0;
+    margin-right: 20px;
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--white);
+    font-family: 'Helvetica Neue';
+}
+.login-content-part .inner-form-part .form-part .login-with-part .icon-part a{
+    margin-right: 18px;
+}
+.login-content-part .inner-form-part .form-part .login-with-part .icon-part i{
+    font-size: 24px;
+    color: var(--white);
+}
+.scanner-block{
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; */
+}
+.scanner-block .scan-block{
+    background-color: #666666;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    width:  90%;
+    min-height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/scan-frame.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85%;
+   
+}
+.scanner-block .scan-block .add{
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 50%;
+    color: #fff;
+    width: 43px;
+    height: 43px;
+}
+.scanner-block .customer-selfie-btn{
+    font-family: 'Helvetica Neue';
+    font-size: 24px;
+    color: var(--black);
+    border: 1px solid var(--white);
+    background: var(--white);
+    padding: 6px 6px;
+    border-radius: 25px;
+    margin-bottom: 38px;
+    min-width: 215px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+}
+button:hover{
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 1440px){
+    .login-content-part{
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 1120px){
+    .login-content-part{
+        max-width: 90%;
+    }
+    .scanner-block .scan-block{
+        width: 100%;
+    }
+    .main-form-part{
+        padding: 80px 60px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .scanner-block{
+        margin-top: 30px;
+    }
+    .scanner-block .scan-block {
+        width: 60%;
+    }
+    .login-form-order{
+        order: 1;
+    }
+}
+@media screen and (max-width: 767px){
+    .scanner-block .scan-block {
+        width: 80%;
+    }
+    .main-form-part .close-modal-btn img{
+        width: 70%;
+    }
+    .main-form-part .close-modal-btn{
+        right: 20px;
+        top: 20px;
+    }
+}
+@media screen and (max-width: 560px){
+    .main-form-part {
+        padding: 60px 40px;
+    }
+    .scanner-block .scan-block {
+        width: 90%;
+    }
+    .login-content-part .inner-form-part .form-part {
+        max-width: 100%;
+    }
+    .login-content-part {
+        max-width: 95%;
+    }
+    .main-form-part {
+        padding: 60px 30px;
+    }
+    .main-form-part .close-modal-btn img{
+        width: 60%;
+    }
+    .main-form-part .close-modal-btn{
+        right:10px;
+        top: 10px;
+    }
+    .login-content-part .nav-pills .nav-link{
+        font-size: 24px;
+        margin-right: 16px;
+    }
+    .login-tab-content-part .nav-pills .nav-link.active{
+        padding: 4px 16px 8px 16px;
+    }
+    .scanner-block {
+        margin-top: 0px;
+    }
+    .scanner-block .scan-block {
+        width: 100%;
+    }
+    .login-content-part .inner-form-part .form-part .login-with-part .icon-part a {
+        margin-right: 12px;
+    }
+}

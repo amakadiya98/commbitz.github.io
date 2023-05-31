@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
+</head>
+
+<body>
+    <header class="bg-black">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class='container'>
+                <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="links-list d-flex align-items-center gap-3 text-light ps-0 ms-auto">
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn no-bg-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src='./assets/images/Group 1526.png' alt='flag'>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#"><img
+                                                src='./assets/images/tab-flag/Group 2263.png' alt='country' /></a></li>
+                                    <li><a class="dropdown-item" href="#"><img
+                                                src='./assets/images/tab-flag/Group 2259.png' alt='country' /></a></li>
+                                    <li><a class="dropdown-item" href="#"><img
+                                                src='./assets/images/tab-flag/Group 2261.png' alt='country' /></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn no-bg-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    INR
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">USD</a></li>
+                                    <li><a class="dropdown-item" href="#">EURO</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href='#'>Go To App</a></li>
+                        <li><a href='#'>Sign-Up</a></li>
+                        <li><button class="login-btn rounded-pill px-4 py-1">Login</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="login-content-part">
+        <div class="container">
+            <div class="main-form-part">
+                <button class="close-modal-btn">
+                    <img src="./assets/images/close-modal.svg" alt="close"/>
+                   </button>
+                <div class="login-tab-content-part">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-login-tab" data-bs-toggle="pill" data-bs-target="#pills-login" type="button" role="tab" aria-controls="pills-login" aria-selected="true">Login</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link  active" id="pills-signin-tab" data-bs-toggle="pill" data-bs-target="#pills-signin" type="button" role="tab" aria-controls="pills-signin" aria-selected="false">Sign-Up</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+                            <div class="inner-form-part">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-7 login-form-order">
+                                        <div class="form-part">
+                                            <div class="field">
+                                                <input type="text" class="input-field" placeholder="Enter Phone Number or Email"/>
+                                            </div>
+                                            <div class="otp-field">
+                                                <button class="otp-field-btn">Get OTP</button>
+                                            </div>
+                                            <div class="field">
+                                                <input type="text" class="input-field" placeholder="Enter OTP"/>
+                                            </div>
+                                            <div class="checkbox-with-text">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        I’d like to receive promotional emails.
+                                                    </label>
+                                                  </div>
+                                            </div>
+                                            <div class="login-btn-part">
+                                                <button class="login-btn">Login</button>
+                                            </div>
+                                            <div class="login-with-part">
+                                                <p>Or Login with</p>
+                                                <div class="icon-part">
+                                                    <a href="#" class="google-icon"><i class="fa-brands fa-google icon"></i></a>
+                                                    <a href="#" class="apple-icon"><i class="fa-brands fa-apple icon"></i></a>
+                                                    <a href="#" class="facebook-icon"><i class="fa-brands fa-facebook icon"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-5">
+                                        <div class="scanner-block">
+                                            <div class="scan-block">
+                                                <button class="add">
+                                                    <i class="fa-solid fa-plus"></i>  
+                                                </button>
+                                            </div>
+                                            <button class="customer-selfie-btn">Customer Selfie</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show active" id="pills-signin" role="tabpanel" aria-labelledby="pills-signin-tab">
+                            <div class="inner-form-part">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-7 login-form-order">
+                                        <div class="form-part">
+                                            <div class="field">
+                                                <input type="text" class="input-field" placeholder="Enter Phone Number or Email"/>
+                                            </div>
+                                            <div class="otp-field">
+                                                <button class="otp-field-btn">Get OTP</button>
+                                            </div>
+                                            <div class="field">
+                                                <input type="text" class="input-field" placeholder="Enter OTP"/>
+                                            </div>
+                                            <div class="checkbox-with-text">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        I’d like to receive promotional emails.
+                                                    </label>
+                                                  </div>
+                                            </div>
+                                            <div class="login-btn-part">
+                                                <button class="login-btn">Sign-Up</button>
+                                            </div>
+                                            <div class="login-with-part">
+                                                <p>Or Sign-Up with</p>
+                                                <div class="icon-part">
+                                                    <a href="#" class="google-icon"><i class="fa-brands fa-google icon"></i></a>
+                                                    <a href="#" class="apple-icon"><i class="fa-brands fa-apple icon"></i></a>
+                                                    <a href="#" class="facebook-icon"><i class="fa-brands fa-facebook icon"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-5">
+                                        <div class="scanner-block">
+                                            <div class="scan-block">
+                                                <button class="add">
+                                                    <i class="fa-solid fa-plus"></i>  
+                                                </button>
+                                            </div>
+                                            <button class="customer-selfie-btn">Customer Selfie</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/Js/jquery.min.js"></script>
+    <script src="./assets/Js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
