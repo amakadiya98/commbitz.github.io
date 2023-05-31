@@ -68,14 +68,19 @@
 .login-btn {
   background-color: var(--primary);
   font-size: 18px;
+  line-height: 30px;
   border-color: black;
   font-weight: 500;
+  color: var(--black) !important;
+  border: 2px solid var(--primary);
+  height: 44px;
+  display: inline-block;
 }
 
 .login-btn:hover {
   box-shadow: none;
   border-color: var(--primary);
-  color: var(--primary);
+  color: var(--primary) !important;
   background-color: var(--black);
 }
 
@@ -2188,7 +2193,9 @@ footer .right-part .bottom-side .text-one a {
   width: 20px;
   font-size: 20px;
 }
-
+.sim-tab-part .tb-card .text-row p i.data-rotate-icon{
+  transform: rotate(90deg);
+}
 input:focus{
   outline: 0;
 }
