@@ -1818,6 +1818,9 @@ footer .right-part .bottom-side .text-one a {
   .image-slide-section .mobile-image-postion img {
     width: 100%;
   }
+  .sim-tab-part .tb-card .text-row p {
+    font-size: 18px;
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -2180,6 +2183,12 @@ footer .right-part .bottom-side .text-one a {
     height: 300px;
   }
 }
+
+.sim-tab-part .tb-card .text-row p i{
+  width: 20px;
+  font-size: 20px;
+}
+
 input:focus{
   outline: 0;
 }
