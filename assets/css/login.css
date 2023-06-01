@@ -90,10 +90,10 @@
     min-width: 130px;
     height: 44px;
 }
-.login-content-part .inner-form-part .form-part .checkbox-with-text {
+.checkbox-with-text {
     margin-bottom: 20px;
 }
-.login-content-part .inner-form-part .form-part .checkbox-with-text label{
+.checkbox-with-text label{
     color: var(--white);
     font-family: 'Helvetica Neue';
     font-size: 18px;
@@ -274,9 +274,27 @@ button:hover{
 .travel-information-content-part .custom-drop-down .dropdown-menu .flag-size:hover{
     opacity: 1 !important;
 }
+
+/* user Information */
+.login-content-part.user-information{
+    max-width: 50%;
+}
+.login-content-part.user-information .main-form-part{
+    padding: 60px 40px 30px;
+}
+/* product information */
+.login-content-part.product-information{
+    max-width: 50%;
+}
 @media screen and (max-width: 1440px){
     .login-content-part{
         max-width: 80%;
+    }
+    .login-content-part.user-information {
+        max-width: 70%;
+    }
+    .login-content-part.product-information{
+        max-width: 70%;
     }
 }
 @media screen and (max-width: 1120px){
@@ -290,6 +308,11 @@ button:hover{
         padding: 80px 60px;
     }
 }
+@media screen and (max-width:1024px) {
+    .login-content-part.user-information {
+        max-width: 80%;
+    }
+}
 @media screen and (max-width: 991px) {
     .scanner-block{
         margin-top: 30px;
@@ -299,6 +322,9 @@ button:hover{
     }
     .login-form-order{
         order: 1;
+    }
+    .login-content-part.product-information {
+        max-width: 80%;
     }
 }
 @media screen and (max-width: 767px){
@@ -311,6 +337,15 @@ button:hover{
     .main-form-part .close-modal-btn{
         right: 20px;
         top: 20px;
+    }
+    .login-content-part.user-information {
+        max-width: 100%;
+    }
+    .login-content-part.product-information {
+        max-width: 100%;
+    }
+    .login-content-part.user-information .main-form-part {
+        padding: 40px 20px 30px;
     }
 }
 @media screen and (max-width: 560px){

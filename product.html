@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
+</head>
+
+<body>
+    <header class="bg-black">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class='container'>
+                <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="links-list d-flex align-items-center gap-3 text-light ps-0 ms-auto">
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn no-bg-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src='./assets/images/Group 1526.png' alt='flag'>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#"><img
+                                                src='./assets/images/tab-flag/Group 2263.png' alt='country' /></a></li>
+                                    <li><a class="dropdown-item" href="#"><img
+                                                src='./assets/images/tab-flag/Group 2259.png' alt='country' /></a></li>
+                                    <li><a class="dropdown-item" href="#"><img
+                                                src='./assets/images/tab-flag/Group 2261.png' alt='country' /></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn no-bg-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    INR
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">USD</a></li>
+                                    <li><a class="dropdown-item" href="#">EURO</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href='#'>Go To App</a></li>
+                        <li><a href='./login.html'>Sign-Up</a></li>
+                        <li><a href="./login.html" class="login-btn rounded-pill px-4 py-1">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="login-content-part product-information">
+        <div class="container">
+            <div class="main-form-part">
+                <button class="close-modal-btn">
+                    <img src="./assets/images/close-modal.svg" alt="close"/>
+                </button>
+                <div class="travel-information-content-part">
+                      <div class="travel-part">
+                        <p>Your Message</p>
+                        <div class="row travel-data-filed">
+                            <div class="col-md-12">
+                                <div class="field-data">
+                                    <input type="text" placeholder="Name"  class="input-field-data"/>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="field-data">
+                                    <input type="email" placeholder="Email"  class="input-field-data"/>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="field-data">
+                                    <input type="tel" placeholder="+01 Mobile"  class="input-field-data"/>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="field-data">
+                                    <input type="url" placeholder="Company name"  class="input-field-data"/>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="field-data">
+                                    <input type="url" placeholder="Website"  class="input-field-data"/>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="field-data">
+                                    <div class="dropdown custom-drop-down">
+                                    <button class="btn country-down-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                     Country
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><button class="dropdown-item flag-size" type="button"><img
+                                            src="./assets/images/tab-flag/Group 2256.png" alt="United States" />United
+                                        States</button></li>
+                                        <li><button class="dropdown-item flag-size" type="button"><img
+                                                    src="./assets/images/tab-flag/Group 2267.png" alt="China" />China</button></li>
+                                        <li><button class="dropdown-item flag-size" type="button"><img
+                                                    src="./assets/images/tab-flag/Group 2253.png" alt="india" />India</button></li>
+                                        <li><button class="dropdown-item flag-size" type="button"><img
+                                                    src="./assets/images/tab-flag/Group 1889.png" alt="fuji" />Fuji</button></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="field-data">
+                                    <div class="">
+                                        <textarea class="input-field-data" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                      </div>
+                                      <div class="checkbox-with-text ms-1 mt-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                I’d like to receive promotional emails.
+                                            </label>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="field-data  combine-field d-flex justify-content-start mt-3">
+                                    <button class="send-otp green">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/Js/jquery.min.js"></script>
+    <script src="./assets/Js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

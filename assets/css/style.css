@@ -2201,7 +2201,7 @@ footer .right-part .bottom-side .text-one a {
 .sim-tab-part .tb-card .text-row p i.data-rotate-icon{
   transform: rotate(90deg);
 }
-input:focus{
+input:focus, textarea:focus{
   outline: 0;
 }
 .form-check-input:focus{
