@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
@@ -85,8 +88,9 @@
                 <div class="privacy-block">
                     <div class="title-text-part">
                         <h6>Your Privacy</h6>
-                        <p>By clicking “Accept all cookies”, you agree this website can store cookies on your device and disclose information in accordance with our Cookie Policy.</p>
-                    </div> 
+                        <p>By clicking “Accept all cookies”, you agree this website can store cookies on your device and
+                            disclose information in accordance with our Cookie Policy.</p>
+                    </div>
                     <div class="button-part">
                         <button class="accept-btn">Accept All Cookies</button>
                     </div>
@@ -103,23 +107,9 @@
     <section class="second-section section-margin-top">
         <div class="container">
             <div class="search-part">
-                <div class="dropdown">
-                    <button class="btn country-dropdown-btn dropdown-toggle" type="button" id="dropdownMenu2"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        select your country
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><button class="dropdown-item custom-btn" type="button"><img
-                                    src="./assets/images/tab-flag/Group 2256.png" alt="United States" />United
-                                States</button></li>
-                        <li><button class="dropdown-item custom-btn" type="button"><img
-                                    src="./assets/images/tab-flag/Group 2267.png" alt="China" />China</button></li>
-                        <li><button class="dropdown-item custom-btn" type="button"><img
-                                    src="./assets/images/tab-flag/Group 2253.png" alt="india" />India</button></li>
-                        <li><button class="dropdown-item custom-btn" type="button"><img
-                                    src="./assets/images/tab-flag/Group 1889.png" alt="fuji" />Fuji</button></li>
-                    </ul>
-                </div>
+                <select class="country-dropdown-btn custom-select" id="dropdownMenu2">
+                    <option value="" disabled selected>Select your country</option>
+                </select>
             </div>
             <div class="tab-content-part">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -484,7 +474,7 @@
                                     <img src='./assets/images/arrow-down.png' alt='arrow'>
                                 </div>
                             </div>
-                         
+
                             <div class="flag-country-box active">
                                 <div class="ct-name">
                                     <div class="flag-icon">
@@ -544,22 +534,30 @@
                                         <div class="col-md-6 col-lg-4 col-12">
                                             <div class="tb-card">
                                                 <div class="sim-image">
-                                                    <img src='./assets/images/homePage/card-com-logo.png' alt='card-icon' >
+                                                    <img src='./assets/images/homePage/card-com-logo.png'
+                                                        alt='card-icon'>
                                                 </div>
                                                 <div class="content-card">
                                                     <div class="card-head">
                                                         <p>Nǐ hǎo</p>
                                                         <div>
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star.png" alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="card-text">
                                                         <div class="text-row">
-                                                             <p><i class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data
+                                                            </p>
                                                             <p>1 GB</p>
                                                         </div>
                                                         <div class="text-row">
@@ -567,7 +565,9 @@
                                                             <p>Free</p>
                                                         </div>
                                                         <div class="text-row">
-                                                           <p><i class="fa-solid fa-calendar me-2 card-icon"></i>Validity</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-calendar me-2 card-icon"></i>Validity
+                                                            </p>
                                                             <p>7 Days</p>
                                                         </div>
                                                     </div>
@@ -581,23 +581,31 @@
                                         <div class="col-md-6 col-lg-4 col-12">
                                             <div class="tb-card">
                                                 <div class="sim-image">
-                                                    <img src='./assets/images/homePage/card-com-logo.png' alt='card-icon' >
+                                                    <img src='./assets/images/homePage/card-com-logo.png'
+                                                        alt='card-icon'>
                                                 </div>
                                                 <div class="content-card">
                                                     <div class="card-head">
                                                         <p>Nǐ hǎo</p>
                                                         <div>
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star.png" alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="card-text">
                                                         <div class="text-row">
                                                             <!-- <i class="fa-solid fa-right-left"></i> -->
-                                                            <p><i class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data
+                                                            </p>
                                                             <p>1 GB</p>
                                                         </div>
                                                         <div class="text-row">
@@ -605,7 +613,9 @@
                                                             <p>Free</p>
                                                         </div>
                                                         <div class="text-row">
-                                                            <p><i class="fa-solid fa-calendar me-2 card-icon"></i>Validity</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-calendar me-2 card-icon"></i>Validity
+                                                            </p>
                                                             <p>7 Days</p>
                                                         </div>
                                                     </div>
@@ -619,22 +629,30 @@
                                         <div class="col-md-6 col-lg-4 col-12">
                                             <div class="tb-card">
                                                 <div class="sim-image">
-                                                    <img src='./assets/images/homePage/card-com-logo.png' alt='card-icon' >
+                                                    <img src='./assets/images/homePage/card-com-logo.png'
+                                                        alt='card-icon'>
                                                 </div>
                                                 <div class="content-card">
                                                     <div class="card-head">
                                                         <p>Nǐ hǎo</p>
                                                         <div>
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star.png" alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="card-text">
                                                         <div class="text-row">
-                                                             <p><i class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data
+                                                            </p>
                                                             <p>1 GB</p>
                                                         </div>
                                                         <div class="text-row">
@@ -642,7 +660,9 @@
                                                             <p>Free</p>
                                                         </div>
                                                         <div class="text-row">
-                                                           <p><i class="fa-solid fa-calendar me-2 card-icon"></i>Validity</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-calendar me-2 card-icon"></i>Validity
+                                                            </p>
                                                             <p>7 Days</p>
                                                         </div>
                                                     </div>
@@ -656,22 +676,30 @@
                                         <div class="col-md-6 col-lg-4 col-12">
                                             <div class="tb-card">
                                                 <div class="sim-image">
-                                                    <img src='./assets/images/homePage/card-com-logo.png' alt='card-icon' >
+                                                    <img src='./assets/images/homePage/card-com-logo.png'
+                                                        alt='card-icon'>
                                                 </div>
                                                 <div class="content-card">
                                                     <div class="card-head">
                                                         <p>Nǐ hǎo</p>
                                                         <div>
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star.png" alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="card-text">
                                                         <div class="text-row">
-                                                             <p><i class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data
+                                                            </p>
                                                             <p>1 GB</p>
                                                         </div>
                                                         <div class="text-row">
@@ -679,7 +707,9 @@
                                                             <p>Free</p>
                                                         </div>
                                                         <div class="text-row">
-                                                           <p><i class="fa-solid fa-calendar me-2 card-icon"></i>Validity</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-calendar me-2 card-icon"></i>Validity
+                                                            </p>
                                                             <p>7 Days</p>
                                                         </div>
                                                     </div>
@@ -693,22 +723,30 @@
                                         <div class="col-md-6 col-lg-4 col-12">
                                             <div class="tb-card">
                                                 <div class="sim-image">
-                                                    <img src='./assets/images/homePage/card-com-logo.png' alt='card-icon' >
+                                                    <img src='./assets/images/homePage/card-com-logo.png'
+                                                        alt='card-icon'>
                                                 </div>
                                                 <div class="content-card">
                                                     <div class="card-head">
                                                         <p>Nǐ hǎo</p>
                                                         <div>
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star.png" alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="card-text">
                                                         <div class="text-row">
-                                                             <p><i class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data
+                                                            </p>
                                                             <p>1 GB</p>
                                                         </div>
                                                         <div class="text-row">
@@ -716,7 +754,9 @@
                                                             <p>Free</p>
                                                         </div>
                                                         <div class="text-row">
-                                                           <p><i class="fa-solid fa-calendar me-2 card-icon"></i>Validity</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-calendar me-2 card-icon"></i>Validity
+                                                            </p>
                                                             <p>7 Days</p>
                                                         </div>
                                                     </div>
@@ -735,22 +775,30 @@
                                         <div class="col-md-6 col-lg-4 col-12">
                                             <div class="tb-card blue">
                                                 <div class="sim-image">
-                                                    <img src='./assets/images/homePage/card-com-logo.png' alt='card-icon'>
+                                                    <img src='./assets/images/homePage/card-com-logo.png'
+                                                        alt='card-icon'>
                                                 </div>
                                                 <div class="content-card">
                                                     <div class="card-head">
                                                         <p>Nǐ hǎo</p>
                                                         <div>
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star.png" alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="card-text">
                                                         <div class="text-row">
-                                                             <p><i class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data
+                                                            </p>
                                                             <p>1 GB</p>
                                                         </div>
                                                         <div class="text-row">
@@ -758,7 +806,9 @@
                                                             <p>Free</p>
                                                         </div>
                                                         <div class="text-row">
-                                                           <p><i class="fa-solid fa-calendar me-2 card-icon"></i>Validity</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-calendar me-2 card-icon"></i>Validity
+                                                            </p>
                                                             <p>7 Days</p>
                                                         </div>
                                                     </div>
@@ -772,22 +822,30 @@
                                         <div class="col-md-6 col-lg-4 col-12">
                                             <div class="tb-card blue">
                                                 <div class="sim-image">
-                                                    <img src='./assets/images/homePage/card-com-logo.png' alt='card-icon'>
+                                                    <img src='./assets/images/homePage/card-com-logo.png'
+                                                        alt='card-icon'>
                                                 </div>
                                                 <div class="content-card">
                                                     <div class="card-head">
                                                         <p>Nǐ hǎo</p>
                                                         <div>
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star.png" alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="card-text">
                                                         <div class="text-row">
-                                                             <p><i class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data
+                                                            </p>
                                                             <p>1 GB</p>
                                                         </div>
                                                         <div class="text-row">
@@ -795,7 +853,9 @@
                                                             <p>Free</p>
                                                         </div>
                                                         <div class="text-row">
-                                                           <p><i class="fa-solid fa-calendar me-2 card-icon"></i>Validity</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-calendar me-2 card-icon"></i>Validity
+                                                            </p>
                                                             <p>7 Days</p>
                                                         </div>
                                                     </div>
@@ -809,22 +869,30 @@
                                         <div class="col-md-6 col-lg-4 col-12">
                                             <div class="tb-card blue">
                                                 <div class="sim-image">
-                                                    <img src='./assets/images/homePage/card-com-logo.png' alt='card-icon'>
+                                                    <img src='./assets/images/homePage/card-com-logo.png'
+                                                        alt='card-icon'>
                                                 </div>
                                                 <div class="content-card">
                                                     <div class="card-head">
                                                         <p>Nǐ hǎo</p>
                                                         <div>
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star.png" alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="card-text">
                                                         <div class="text-row">
-                                                             <p><i class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data
+                                                            </p>
                                                             <p>1 GB</p>
                                                         </div>
                                                         <div class="text-row">
@@ -832,7 +900,9 @@
                                                             <p>Free</p>
                                                         </div>
                                                         <div class="text-row">
-                                                           <p><i class="fa-solid fa-calendar me-2 card-icon"></i>Validity</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-calendar me-2 card-icon"></i>Validity
+                                                            </p>
                                                             <p>7 Days</p>
                                                         </div>
                                                     </div>
@@ -846,22 +916,30 @@
                                         <div class="col-md-6 col-lg-4 col-12">
                                             <div class="tb-card blue">
                                                 <div class="sim-image">
-                                                    <img src='./assets/images/homePage/card-com-logo.png' alt='card-icon'>
+                                                    <img src='./assets/images/homePage/card-com-logo.png'
+                                                        alt='card-icon'>
                                                 </div>
                                                 <div class="content-card">
                                                     <div class="card-head">
                                                         <p>Nǐ hǎo</p>
                                                         <div>
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star.png" alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="card-text">
                                                         <div class="text-row">
-                                                             <p><i class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data
+                                                            </p>
                                                             <p>1 GB</p>
                                                         </div>
                                                         <div class="text-row">
@@ -869,7 +947,9 @@
                                                             <p>Free</p>
                                                         </div>
                                                         <div class="text-row">
-                                                           <p><i class="fa-solid fa-calendar me-2 card-icon"></i>Validity</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-calendar me-2 card-icon"></i>Validity
+                                                            </p>
                                                             <p>7 Days</p>
                                                         </div>
                                                     </div>
@@ -883,22 +963,30 @@
                                         <div class="col-md-6 col-lg-4 col-12">
                                             <div class="tb-card blue">
                                                 <div class="sim-image">
-                                                    <img src='./assets/images/homePage/card-com-logo.png' alt='card-icon'>
+                                                    <img src='./assets/images/homePage/card-com-logo.png'
+                                                        alt='card-icon'>
                                                 </div>
                                                 <div class="content-card">
                                                     <div class="card-head">
                                                         <p>Nǐ hǎo</p>
                                                         <div>
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star.png" alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="card-text">
                                                         <div class="text-row">
-                                                             <p><i class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data
+                                                            </p>
                                                             <p>1 GB</p>
                                                         </div>
                                                         <div class="text-row">
@@ -906,7 +994,9 @@
                                                             <p>Free</p>
                                                         </div>
                                                         <div class="text-row">
-                                                           <p><i class="fa-solid fa-calendar me-2 card-icon"></i>Validity</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-calendar me-2 card-icon"></i>Validity
+                                                            </p>
                                                             <p>7 Days</p>
                                                         </div>
                                                     </div>
@@ -925,22 +1015,30 @@
                                         <div class="col-md-6 col-lg-4 col-12">
                                             <div class="tb-card green">
                                                 <div class="sim-image">
-                                                    <img src='./assets/images/homePage/card-com-logo.png' alt='card-icon'>
+                                                    <img src='./assets/images/homePage/card-com-logo.png'
+                                                        alt='card-icon'>
                                                 </div>
                                                 <div class="content-card">
                                                     <div class="card-head">
                                                         <p>Nǐ hǎo</p>
                                                         <div>
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star.png" alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="card-text">
                                                         <div class="text-row">
-                                                             <p><i class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data
+                                                            </p>
                                                             <p>1 GB</p>
                                                         </div>
                                                         <div class="text-row">
@@ -948,7 +1046,9 @@
                                                             <p>Free</p>
                                                         </div>
                                                         <div class="text-row">
-                                                           <p><i class="fa-solid fa-calendar me-2 card-icon"></i>Validity</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-calendar me-2 card-icon"></i>Validity
+                                                            </p>
                                                             <p>7 Days</p>
                                                         </div>
                                                     </div>
@@ -962,22 +1062,30 @@
                                         <div class="col-md-6 col-lg-4 col-12">
                                             <div class="tb-card green">
                                                 <div class="sim-image">
-                                                    <img src='./assets/images/homePage/card-com-logo.png' alt='card-icon'>
+                                                    <img src='./assets/images/homePage/card-com-logo.png'
+                                                        alt='card-icon'>
                                                 </div>
                                                 <div class="content-card">
                                                     <div class="card-head">
                                                         <p>Nǐ hǎo</p>
                                                         <div>
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star.png" alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="card-text">
                                                         <div class="text-row">
-                                                             <p><i class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data
+                                                            </p>
                                                             <p>1 GB</p>
                                                         </div>
                                                         <div class="text-row">
@@ -985,7 +1093,9 @@
                                                             <p>Free</p>
                                                         </div>
                                                         <div class="text-row">
-                                                           <p><i class="fa-solid fa-calendar me-2 card-icon"></i>Validity</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-calendar me-2 card-icon"></i>Validity
+                                                            </p>
                                                             <p>7 Days</p>
                                                         </div>
                                                     </div>
@@ -999,22 +1109,30 @@
                                         <div class="col-md-6 col-lg-4 col-12">
                                             <div class="tb-card blue">
                                                 <div class="sim-image">
-                                                    <img src='./assets/images/homePage/card-com-logo.png' alt='card-icon'>
+                                                    <img src='./assets/images/homePage/card-com-logo.png'
+                                                        alt='card-icon'>
                                                 </div>
                                                 <div class="content-card">
                                                     <div class="card-head">
                                                         <p>Nǐ hǎo</p>
                                                         <div>
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star.png" alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="card-text">
                                                         <div class="text-row">
-                                                             <p><i class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data
+                                                            </p>
                                                             <p>1 GB</p>
                                                         </div>
                                                         <div class="text-row">
@@ -1022,7 +1140,9 @@
                                                             <p>Free</p>
                                                         </div>
                                                         <div class="text-row">
-                                                           <p><i class="fa-solid fa-calendar me-2 card-icon"></i>Validity</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-calendar me-2 card-icon"></i>Validity
+                                                            </p>
                                                             <p>7 Days</p>
                                                         </div>
                                                     </div>
@@ -1036,22 +1156,30 @@
                                         <div class="col-md-6 col-lg-4 col-12">
                                             <div class="tb-card blue">
                                                 <div class="sim-image">
-                                                    <img src='./assets/images/homePage/card-com-logo.png' alt='card-icon'>
+                                                    <img src='./assets/images/homePage/card-com-logo.png'
+                                                        alt='card-icon'>
                                                 </div>
                                                 <div class="content-card">
                                                     <div class="card-head">
                                                         <p>Nǐ hǎo</p>
                                                         <div>
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star.png" alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="card-text">
                                                         <div class="text-row">
-                                                             <p><i class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data
+                                                            </p>
                                                             <p>1 GB</p>
                                                         </div>
                                                         <div class="text-row">
@@ -1059,7 +1187,9 @@
                                                             <p>Free</p>
                                                         </div>
                                                         <div class="text-row">
-                                                           <p><i class="fa-solid fa-calendar me-2 card-icon"></i>Validity</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-calendar me-2 card-icon"></i>Validity
+                                                            </p>
                                                             <p>7 Days</p>
                                                         </div>
                                                     </div>
@@ -1073,22 +1203,30 @@
                                         <div class="col-md-6 col-lg-4 col-12">
                                             <div class="tb-card blue">
                                                 <div class="sim-image">
-                                                    <img src='./assets/images/homePage/card-com-logo.png' alt='card-icon'>
+                                                    <img src='./assets/images/homePage/card-com-logo.png'
+                                                        alt='card-icon'>
                                                 </div>
                                                 <div class="content-card">
                                                     <div class="card-head">
                                                         <p>Nǐ hǎo</p>
                                                         <div>
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star-fill.png" alt="">
-                                                            <img class="star-image" src="./assets/images/star.png" alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star-fill.png"
+                                                                alt="">
+                                                            <img class="star-image" src="./assets/images/star.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="card-text">
                                                         <div class="text-row">
-                                                             <p><i class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-right-left me-2 card-icon data-rotate-icon"></i>Data
+                                                            </p>
                                                             <p>1 GB</p>
                                                         </div>
                                                         <div class="text-row">
@@ -1096,7 +1234,9 @@
                                                             <p>Free</p>
                                                         </div>
                                                         <div class="text-row">
-                                                           <p><i class="fa-solid fa-calendar me-2 card-icon"></i>Validity</p>
+                                                            <p><i
+                                                                    class="fa-solid fa-calendar me-2 card-icon"></i>Validity
+                                                            </p>
                                                             <p>7 Days</p>
                                                         </div>
                                                     </div>
@@ -1322,12 +1462,10 @@
                     <div class="video-container">
                         <video width="400">
                             <!-- ./assets/images/homePage/check.mp4 -->
-                            <source 
-                                src="" 
-                                type="video/mp4">
+                            <source src="" type="video/mp4">
                             <source src="mov_bbb.ogg" type="video/ogg">
-                                Your browser does not support HTML video.
-                          </video>
+                            Your browser does not support HTML video.
+                        </video>
                         <img src="./assets/images/homePage/play.png" alt="play" class="icon-play">
                     </div>
                 </div>
@@ -1692,6 +1830,7 @@
         </div>
     </footer>
     <script src="./assets/Js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./assets/Js/bootstrap.bundle.min.js"></script>
     <script>
         let searchInput = document.getElementById('searchInput');
@@ -1702,11 +1841,49 @@
         };
     </script>
     <script>
-           $(document).ready(function(){
-                $(".flag-country-box").click(function(){
-                    $(this).toggleClass("active");
-                });
+        $(document).ready(function () {
+            $(".flag-country-box").click(function () {
+                $(this).toggleClass("active");
+            });
         });
+    </script>
+    <script>
+        var countries = [
+            { name: "United States", flag: "./assets/images/tab-flag/Group 2256.png" },
+            { name: "China", flag: "./assets/images/tab-flag/Group 2267.png" },
+            { name: "India", flag: "./assets/images/tab-flag/Group 2253.png" },
+            { name: "Fuji", flag: "./assets/images/tab-flag/Group 1889.png" }
+        ];
+
+        function populateDropdown() {
+            var dropdown = document.getElementById("dropdownMenu2");
+
+            countries.forEach(function (country) {
+                var option = document.createElement("option");
+                option.value = country.name.toLowerCase();
+                option.text = country.name;
+                option.dataset.image = country.flag;
+                dropdown.appendChild(option);
+            });
+        }
+
+        window.addEventListener("load", populateDropdown);
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#dropdownMenu2').select2({
+                templateResult: formatOption
+            });
+        });
+
+        function formatOption(option) {
+            if (!option.id) {
+                return option.text;
+            }
+
+            var $option = $('<span><img src="' + $(option.element).data('image') + '" class="select2-flag" /> ' + option.text + '</span>');
+            return $option;
+        }
     </script>
 </body>
 

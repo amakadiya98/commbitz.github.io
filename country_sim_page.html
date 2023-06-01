@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
+    <link rel="stylesheet" href="./assets/css/country_sim.css">
+</head>
+
+<body>
+    <header class="bg-black">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class='container'>
+                <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="links-list d-flex align-items-center gap-3 text-light ps-0 ms-auto">
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn no-bg-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src='./assets/images/Group 1526.png' alt='flag'>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#"><img
+                                                src='./assets/images/tab-flag/Group 2263.png' alt='country' /></a></li>
+                                    <li><a class="dropdown-item" href="#"><img
+                                                src='./assets/images/tab-flag/Group 2259.png' alt='country' /></a></li>
+                                    <li><a class="dropdown-item" href="#"><img
+                                                src='./assets/images/tab-flag/Group 2261.png' alt='country' /></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn no-bg-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    INR
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">USD</a></li>
+                                    <li><a class="dropdown-item" href="#">EURO</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href='#'>Go To App</a></li>
+                        <li><a href='./login.html'>Sign-Up</a></li>
+                        <li><a href="./login.html" class="login-btn rounded-pill px-4 py-1">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="login-content-part coutry_sim_page">
+        <div class="container">
+            <div class="main-form-part">
+                <button class="close-modal-btn">
+                    <img src="./assets/images/close-modal.svg" alt="close"/>
+                </button>
+               <div class="verticale-tab-content-part">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="left-part">
+                                <div class="user-name-part">
+                                    <h6>Mathew John</h6>
+                                </div>
+                                <div class="v-tab-part"> 
+                                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                        <button class="nav-link" id="v-pills-country-tab" data-bs-toggle="pill" data-bs-target="#v-pills-country" type="button" role="tab" aria-controls="v-pills-country" aria-selected="true">Countries & SIMs</button>
+                                        <button class="nav-link active" id="v-pills-account-tab" data-bs-toggle="pill" data-bs-target="#v-pills-account" type="button" role="tab" aria-controls="v-pills-account" aria-selected="false">Account information</button>
+                                        <button class="nav-link" id="v-pills-wallet-tab" data-bs-toggle="pill" data-bs-target="#v-pills-wallet" type="button" role="tab" aria-controls="v-pills-wallet" aria-selected="false">Wallets </button>
+                                        <button class="nav-link" id="v-pills-sim-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sim" type="button" role="tab" aria-controls="v-pills-sim" aria-selected="false">My SIMs</button>
+                                        <button class="nav-link" id="v-pills-works-tab" data-bs-toggle="pill" data-bs-target="#v-pills-works" type="button" role="tab" aria-controls="v-pills-works" aria-selected="false">How it works? </button>
+                                        <button class="nav-link" id="v-pills-faq-tab" data-bs-toggle="pill" data-bs-target="#v-pills-faq" type="button" role="tab" aria-controls="v-pills-faq" aria-selected="false">FAQs</button>
+                                    </div>
+                                </div>
+                                <div class="logout-part">
+                                    <button class="logout-btn">
+                                        Logout
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="main-v-tab-content-part">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade" id="v-pills-country" role="tabpanel" aria-labelledby="v-pills-country-tab">
+                                        <div class="coutry-tab-block">
+                                            <p class="common-text">Where are you going?</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade show active" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-account-tab">
+                                        <div class="account-tab-block">
+                                            <p class="common-text">Account Information</p>
+                                            <div class="row form-part">
+                                                <div class="col-md-12">
+                                                    <div class="field">
+                                                        <input type="text" class="input-field-data" placeholder="Name"/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="field">
+                                                        <input type="tel" class="input-field-data" placeholder="Phone Number"/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="field">
+                                                        <input type="email" class="input-field-data" placeholder="Email"/>
+                                                        <button class="small-change-btn">Change</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="checkbox-with-text ms-2">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                I’d like to receive promotional emails.
+                                                            </label>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <button class="common-btn">Save Changes</button>
+                                                    <button class="de-active-btn">De-activate Temporarily</button>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <div class="delete-block-part">
+                                                        <h6>Delete Account</h6>
+                                                        <p>You can delete your account permanently. *Note that this process can take a while and can’t be undone after completion</p>
+                                                        <button class="delete-sm-btn">Delete Account</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-wallet" role="tabpanel" aria-labelledby="v-pills-wallet-tab">...</div>
+                                    <div class="tab-pane fade" id="v-pills-sim" role="tabpanel" aria-labelledby="v-pills-sim-tab">...</div>
+                                    <div class="tab-pane fade" id="v-pills-works" role="tabpanel" aria-labelledby="v-pills-works-tab">...</div>
+                                    <div class="tab-pane fade" id="v-pills-faq" role="tabpanel" aria-labelledby="v-pills-faq-tab">...</div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/Js/jquery.min.js"></script>
+    <script src="./assets/Js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

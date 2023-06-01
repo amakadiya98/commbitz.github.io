@@ -10,6 +10,7 @@
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/login.css" />
 </head>
@@ -106,80 +107,36 @@
                             <div class="col-md-12 col-lg-6">
                                 <div class="field-data">
                                     <div class="dropdown custom-drop-down">
-                                    <button class="btn country-down-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                     Country
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><button class="dropdown-item flag-size" type="button"><img
-                                            src="./assets/images/tab-flag/Group 2256.png" alt="United States" />United
-                                        States</button></li>
-                                        <li><button class="dropdown-item flag-size" type="button"><img
-                                                    src="./assets/images/tab-flag/Group 2267.png" alt="China" />China</button></li>
-                                        <li><button class="dropdown-item flag-size" type="button"><img
-                                                    src="./assets/images/tab-flag/Group 2253.png" alt="india" />India</button></li>
-                                        <li><button class="dropdown-item flag-size" type="button"><img
-                                                    src="./assets/images/tab-flag/Group 1889.png" alt="fuji" />Fuji</button></li>
-                                    </ul>
+                                        <select class="country-drop-btn custom-select" id="country-dropdown">
+                                            <option value="" selected disabled>Select Country</option>
+                                        </select>
                                   </div>
                                 </div>
                             </div>
                             <div class="col-md-12 col-lg-6">
                                 <div class="field-data">
                                 <div class="dropdown custom-drop-down">
-                                    <button class="btn country-down-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                      State
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><button class="dropdown-item flag-size" type="button"><img
-                                            src="./assets/images/tab-flag/Group 2256.png" alt="United States" />United
-                                        States</button></li>
-                                        <li><button class="dropdown-item flag-size" type="button"><img
-                                                    src="./assets/images/tab-flag/Group 2267.png" alt="China" />China</button></li>
-                                        <li><button class="dropdown-item flag-size" type="button"><img
-                                                    src="./assets/images/tab-flag/Group 2253.png" alt="india" />India</button></li>
-                                        <li><button class="dropdown-item flag-size" type="button"><img
-                                                    src="./assets/images/tab-flag/Group 1889.png" alt="fuji" />Fuji</button></li>
-                                    </ul>
+                                    <select class="country-drop-btn custom-select" id="state-dropdown">
+                                        <option value="" selected disabled>Select state</option>
+                                    </select>
                                 </div>
                                 </div>
                             </div>
                             <div class="col-md-12 col-lg-6">
                                 <div class="field-data">
                                     <div class="dropdown custom-drop-down">
-                                    <button class="btn country-down-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Locality
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><button class="dropdown-item flag-size" type="button"><img
-                                            src="./assets/images/tab-flag/Group 2256.png" alt="United States" />United
-                                        States</button></li>
-                                        <li><button class="dropdown-item flag-size" type="button"><img
-                                                    src="./assets/images/tab-flag/Group 2267.png" alt="China" />China</button></li>
-                                        <li><button class="dropdown-item flag-size" type="button"><img
-                                                    src="./assets/images/tab-flag/Group 2253.png" alt="india" />India</button></li>
-                                        <li><button class="dropdown-item flag-size" type="button"><img
-                                                    src="./assets/images/tab-flag/Group 1889.png" alt="fuji" />Fuji</button></li>
-                                    </ul>
+                                    <select class="country-drop-btn custom-select" id="locality-dropdown">
+                                        <option value="" selected disabled>Select Locality</option>
+                                    </select>
                                   </div>
                                 </div>
                             </div>
                             <div class="col-md-12 col-lg-6">
                                 <div class="field-data">
                                 <div class="dropdown custom-drop-down">
-                                    <button class="btn country-down-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Pincode
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><button class="dropdown-item flag-size" type="button"><img
-                                            src="./assets/images/tab-flag/Group 2256.png" alt="United States" />United
-                                        States</button></li>
-                                        <li><button class="dropdown-item flag-size" type="button"><img
-                                                    src="./assets/images/tab-flag/Group 2267.png" alt="China" />China</button></li>
-                                        <li><button class="dropdown-item flag-size" type="button"><img
-                                                    src="./assets/images/tab-flag/Group 2253.png" alt="india" />India</button></li>
-                                        <li><button class="dropdown-item flag-size" type="button"><img
-                                                    src="./assets/images/tab-flag/Group 1889.png" alt="fuji" />Fuji</button></li>
-                                    </ul>
+                                    <select class="country-drop-btn custom-select" id="pincode-dropdown">
+                                        <option value="" selected disabled>Select Pincode</option>
+                                    </select>
                                 </div>
                                 </div>
                             </div>
@@ -195,6 +152,109 @@
         </div>
     </section>
     <script src="./assets/Js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./assets/Js/bootstrap.bundle.min.js"></script>
+    <script>
+        var countries = [
+            { name: "United States", flag: "./assets/images/tab-flag/Group 2256.png" },
+            { name: "China", flag: "./assets/images/tab-flag/Group 2267.png" },
+            { name: "India", flag: "./assets/images/tab-flag/Group 2253.png" },
+            { name: "Fuji", flag: "./assets/images/tab-flag/Group 1889.png" }
+        ];
+
+        function populateDropdown() {
+            var dropdown = document.getElementById("country-dropdown");
+
+            countries.forEach(function (country) {
+                var option = document.createElement("option");
+                option.value = country.name.toLowerCase();
+                option.text = country.name;
+                option.dataset.image = country.flag;
+                dropdown.appendChild(option);
+            });
+        }
+
+        window.addEventListener("load", populateDropdown);
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#country-dropdown').select2({
+                templateResult: formatOption
+            });
+            $('#state-dropdown').select2({
+                templateResult: formatOption
+            });
+            $('#locality-dropdown').select2({
+                templateResult: formatOption2
+            });
+            $('#pincode-dropdown').select2({
+                templateResult: formatOption2
+            });
+        });
+
+        function formatOption(option) {
+            if (!option.id) {
+                return option.text;
+            }
+
+            var $option = $('<span><img src="' + $(option.element).data('image') + '" class="select2-flag" /> ' + option.text + '</span>');
+            return $option;
+        }
+        function formatOption2(option) {
+            if (!option.id) {
+                return option.text;
+            }
+
+            var $option = $('<span>' + option.text + '</span>');
+            return $option;
+        }
+    </script>
+    <script>
+        var pincode = [
+            { name: "Pincode 1" },
+            { name: "Pincode 2" },
+            { name: "Pincode 3" },
+        ];
+
+        var state = [
+            { name: "State 1" },
+            { name: "State 2" },
+            { name: "State 3" },
+        ];
+
+        var locality = [
+            { name: "Locality 1" },
+            { name: "Locality 2" },
+            { name: "Locality 3" },
+        ];
+
+        function populateDropdown(dropdownId, optionsArray) {
+            var dropdown = document.getElementById(dropdownId);
+
+            optionsArray.forEach(function (option) {
+                var optionElement = new Option(option.name, option.name);
+                dropdown.appendChild(optionElement);
+            });
+        }
+
+        window.addEventListener("load", function () {
+            populateDropdown("pincode-dropdown", pincode);
+            populateDropdown("state-dropdown", state);
+            populateDropdown("locality-dropdown", locality);
+
+            $('#pincode-dropdown').select2({ templateResult: formatOptionWithOutImg });
+            $('#state-dropdown').select2({ templateResult: formatOptionWithOutImg });
+            $('#locality-dropdown').select2({ templateResult: formatOptionWithOutImg });
+        });
+
+        function formatOptionWithOutImg(option) {
+            if (!option.id) {
+                return option.text;
+            }
+
+            var $option = $('<span>' + option.text + '</span>');
+            return $option;
+        }
+    </script>
 </body>
 </html>

@@ -1,415 +1,453 @@
 :root {
-    --primary: #00FF9D;
-    --white: #ffffff;
-    --black: #000;
-    --theme-blue: #00CAF9;
-  }
-.login-content-part{
-    margin: 60px auto;
-    max-width: 60%;
+  --primary: #00ff9d;
+  --white: #ffffff;
+  --black: #000;
+  --theme-blue: #00caf9;
 }
-.main-form-part{
-    border: 2px solid var(--primary);
-    border-radius: 42px;
-    padding: 80px 100px;
-    position: relative;
+.login-content-part {
+  margin: 60px auto;
+  max-width: 60%;
 }
-.travel-information .main-form-part{
-    padding: 60px;
+.main-form-part {
+  border: 2px solid var(--primary);
+  border-radius: 42px;
+  padding: 80px 100px;
+  position: relative;
+}
+.travel-information .main-form-part {
+  padding: 60px;
 }
 .main-form-part .close-modal-btn {
-    position: absolute;
-    right: 35px;
-    top: 35px;
-    font-size: 28px;
-    color: white;
-    opacity: 0.7;
-    font-weight: 400;
-    background-color: transparent;
-    border: 0;
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  font-size: 28px;
+  color: white;
+  opacity: 0.7;
+  font-weight: 400;
+  background-color: transparent;
+  border: 0;
 }
-.main-form-part .close-modal-btn img{
-    width: 60%;
+.main-form-part .close-modal-btn img {
+  width: 60%;
 }
-.travel-information .main-form-part .close-modal-btn{
-    right: 25px;
-    top:25px;
+.travel-information .main-form-part .close-modal-btn {
+  right: 25px;
+  top: 25px;
 }
-.login-tab-content-part .nav-pills{
-    margin-bottom: 0;
+
+/* select2 css custom start */
+.login-content-part .main-form-part .select2-container {
+  width: 100% !important;
+  height: 46px;
 }
-.login-tab-content-part .nav-pills .nav-link.active{
-    background-color: var(--primary);
-    color: var(--black);
-    font-size: 24px;
-    padding: 4px 32px 8px 32px;
-    border-radius: 22px;
-    display: flex;
-    align-items: center;
-    line-height: 30px;
-    font-family: 'Helvetica Neue';
-}
-.login-content-part .nav-pills .nav-link{
-    font-size: 35px;
-    line-height: 41px;
-    color: var(--white);
-    font-family: 'Helvetica Neue';
-    margin: 0;
-    margin-right: 34px;
-    padding: 0;
-}
-.login-content-part .inner-form-part{
-    margin-top: 38px;
-}
-.login-content-part .inner-form-part .form-part{
-    max-width: 80%;
-}
-.login-content-part .inner-form-part .form-part .input-field{
-    padding: 12px 15px;
-    border: 1px solid var(--primary);
-    border-radius: 10px;
-    width: 100%;
-    font-family: 'Helvetica Neue';
-    color: #000;
+.login-content-part .main-form-part .select2-container--default .select2-selection--single{
+    width: 100% !important;
+    border-radius: 12px;
+    height: 46px;
+    border: 1px solid #00CAF9;
+    font-family: "Helvetica Neue";
     font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 18px;
+    padding: 12px 18px;
 }
-.login-content-part .inner-form-part .form-part  .otp-field-btn{
-    font-family: 'Helvetica Neue';
-    font-size: 24px;
-    color: var(--white);
-    border: 1px solid var(--white);
-    background: transparent;
-    padding: 6px 6px;
-    border-radius: 25px;
-    margin-bottom: 38px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 130px;
-    height: 44px;
+.login-content-part .main-form-part .select2-container--default .select2-selection--single::after {
+    content: '';
+    background-image: url(../images/down.svg);
+    height: 20px;
+    width: 20px;
+    right: 12px;
+    opacity: 0.7;
+}
+
+/* select2 css custom end */
+.login-tab-content-part .nav-pills {
+  margin-bottom: 0;
+}
+.login-tab-content-part .nav-pills .nav-link.active {
+  background-color: var(--primary);
+  color: var(--black);
+  font-size: 24px;
+  padding: 4px 32px 8px 32px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+  font-family: "Helvetica Neue";
+}
+.login-content-part .nav-pills .nav-link {
+  font-size: 35px;
+  line-height: 41px;
+  color: var(--white);
+  font-family: "Helvetica Neue";
+  margin: 0;
+  margin-right: 34px;
+  padding: 0;
+}
+.login-content-part .inner-form-part {
+  margin-top: 38px;
+}
+.login-content-part .inner-form-part .form-part {
+  max-width: 80%;
+}
+.login-content-part .inner-form-part .form-part .input-field {
+  padding: 12px 15px;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  width: 100%;
+  font-family: "Helvetica Neue";
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+.login-content-part .inner-form-part .form-part .otp-field-btn {
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  color: var(--white);
+  border: 1px solid var(--white);
+  background: transparent;
+  padding: 6px 6px;
+  border-radius: 25px;
+  margin-bottom: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 130px;
+  height: 44px;
 }
 .checkbox-with-text {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-.checkbox-with-text label{
-    color: var(--white);
-    font-family: 'Helvetica Neue';
-    font-size: 18px;
-    line-height: 22px;
+.checkbox-with-text label {
+  color: var(--white);
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  line-height: 22px;
 }
-.login-content-part .inner-form-part .form-part .login-btn{
-    font-family: 'Helvetica Neue';
-    font-size: 24px;
-    color: var(--black);
-    border: 1px solid var(--primary);
-    background: var(--primary);
-    padding: 6px 6px;
-    border-radius: 25px;
-    margin-bottom: 38px;
-    min-width: 130px;
-    height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.login-content-part .inner-form-part .form-part .login-btn {
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  color: var(--black);
+  border: 1px solid var(--primary);
+  background: var(--primary);
+  padding: 6px 6px;
+  border-radius: 25px;
+  margin-bottom: 38px;
+  min-width: 130px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.login-content-part .inner-form-part .form-part .login-with-part{
-    display: flex;
-    align-items: center;}
-.login-content-part .inner-form-part .form-part .login-with-part p{
-    margin-bottom: 0;
-    margin-right: 20px;
-    font-size: 18px;
-    line-height: 23px;
-    color: var(--white);
-    font-family: 'Helvetica Neue';
+.login-content-part .inner-form-part .form-part .login-with-part {
+  display: flex;
+  align-items: center;
 }
-.login-content-part .inner-form-part .form-part .login-with-part .icon-part a{
-    margin-right: 18px;
+.login-content-part .inner-form-part .form-part .login-with-part p {
+  margin-bottom: 0;
+  margin-right: 20px;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--white);
+  font-family: "Helvetica Neue";
 }
-.login-content-part .inner-form-part .form-part .login-with-part .icon-part i{
-    font-size: 24px;
-    color: var(--white);
+.login-content-part .inner-form-part .form-part .login-with-part .icon-part a {
+  margin-right: 18px;
 }
-.scanner-block{
-    /* display: flex;
+.login-content-part .inner-form-part .form-part .login-with-part .icon-part i {
+  font-size: 24px;
+  color: var(--white);
+}
+.scanner-block {
+  /* display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column; */
 }
-.scanner-block .scan-block{
-    background-color: #666666;
-    border: 1px solid var(--primary);
-    border-radius: 10px;
-    width:  90%;
-    min-height: 230px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../images/scan-frame.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 85%;
-   
+.scanner-block .scan-block {
+  background-color: #666666;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  width: 90%;
+  min-height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/scan-frame.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 85%;
 }
-.scanner-block .scan-block .add{
-    border: 1px solid #fff;
-    background-color: transparent;
-    border-radius: 50%;
-    color: #fff;
-    width: 43px;
-    height: 43px;
+.scanner-block .scan-block .add {
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #fff;
+  width: 43px;
+  height: 43px;
 }
-.scanner-block .customer-selfie-btn{
-    font-family: 'Helvetica Neue';
-    font-size: 24px;
-    color: var(--black);
-    border: 1px solid var(--white);
-    background: var(--white);
-    padding: 6px 6px;
-    border-radius: 25px;
-    margin-bottom: 38px;
-    min-width: 215px;
-    height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 18px;
+.scanner-block .customer-selfie-btn {
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  color: var(--black);
+  border: 1px solid var(--white);
+  background: var(--white);
+  padding: 6px 6px;
+  border-radius: 25px;
+  margin-bottom: 38px;
+  min-width: 215px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
 }
-button:hover{
-    opacity: 0.8;
+button:hover {
+  opacity: 0.8;
 }
 /* travel information */
-.travel-information-content-part p{
-    font-family: 'Helvetica Neue';
-    color: var(--white);
-    font-size: 24px;
-    line-height: 32px;
+.travel-information-content-part p {
+  font-family: "Helvetica Neue";
+  color: var(--white);
+  font-size: 24px;
+  line-height: 32px;
 }
-.travel-information-content-part .travel-part{
-    margin-top: 38px;
+.travel-information-content-part .travel-part {
+  margin-top: 38px;
 }
-.travel-data-filed{
-    margin-top: 36px;
+.travel-data-filed {
+  margin-top: 36px;
 }
 
-.travel-information-content-part .custom-drop-down .country-down-btn{
-    width: 100%;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #00CAF9;
-    border-radius: 12px;
-    opacity: 1;
-    text-align: left;
-    font-family: 'Helvetica Neue';
-    font-size: 18px;
-    line-height: 22px;
-    color: #666666;
-    padding: 12px 18px;
+.travel-information-content-part .custom-drop-down .country-down-btn {
+  width: 100%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #00caf9;
+  border-radius: 12px;
+  opacity: 1;
+  text-align: left;
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  line-height: 22px;
+  color: #666666;
+  padding: 12px 18px;
 }
-.travel-information-content-part .field-data{
-    margin-bottom: 25px;
+.travel-information-content-part .field-data {
+  margin-bottom: 25px;
 }
-.travel-information-content-part .custom-drop-down .country-down-btn:focus{
-    border: 1px solid var(--primary);
+.travel-information-content-part .custom-drop-down .country-down-btn:focus {
+  border: 1px solid var(--primary);
 }
-.input-field-data{
-    width: 100%;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #00CAF9;
-    border-radius: 12px;
-    opacity: 1;
-    text-align: left;
-    font-family: 'Helvetica Neue';
-    font-size: 18px;
-    line-height: 22px;
-    color: #666666;
-    padding: 12px 18px;
+.input-field-data {
+  width: 100%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #00caf9;
+  border-radius: 12px;
+  opacity: 1;
+  text-align: left;
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  line-height: 22px;
+  color: #666666;
+  padding: 12px 18px;
 }
-.input-field-data:focus{
-    border: 1px solid var(--primary);
+.input-field-data:focus {
+  border: 1px solid var(--primary);
 }
-.input-field-data.short-field{
-    width: 65%;
+.input-field-data.short-field {
+  width: 65%;
 }
-.field-data.combine-field{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+.field-data.combine-field {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
-.field-data.combine-field .send-otp{
-    font-family: 'Helvetica Neue';
-    font-size: 24px;
-    line-height: 23px;
-    color: var(--white);
-    padding: 8px 20px;
-    border: 1px solid var(--white);
-    border-radius: 30px;
-    background-color: transparent;
-    min-width: 154px;
+.field-data.combine-field .send-otp {
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  line-height: 23px;
+  color: var(--white);
+  padding: 8px 20px;
+  border: 1px solid var(--white);
+  border-radius: 30px;
+  background-color: transparent;
+  min-width: 154px;
 }
-.field-data.combine-field .send-otp.green{
-    color: var(--black);
-    background-color: var(--primary);
-    border: 1px solid var(--primary);
+.field-data.combine-field .send-otp.green {
+  color: var(--black);
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
 }
-.custom-drop-down .dropdown-toggle::after{
-    border: 0;
-    content: "";
-    background-image: url('../images/down.svg');
-    background-repeat: no-repeat;
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    right: 12px;
-    opacity: 0.7;
+.custom-drop-down .dropdown-toggle::after {
+  border: 0;
+  content: "";
+  background-image: url("../images/down.svg");
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 12px;
+  opacity: 0.7;
 }
-.custom-drop-down .dropdown-menu{
-    width: 100%;
-} 
-.travel-information-content-part .custom-drop-down .dropdown-menu .flag-size img{
-    width: 25px;
-    margin-right: 10px;
+.custom-drop-down .dropdown-menu {
+  width: 100%;
 }
-.travel-information-content-part .custom-drop-down .dropdown-menu .flag-size:hover{
-    opacity: 1 !important;
+.travel-information-content-part
+  .custom-drop-down
+  .dropdown-menu
+  .flag-size
+  img {
+  width: 25px;
+  margin-right: 10px;
+}
+.travel-information-content-part
+  .custom-drop-down
+  .dropdown-menu
+  .flag-size:hover {
+  opacity: 1 !important;
 }
 
 /* user Information */
-.login-content-part.user-information{
-    max-width: 50%;
+.login-content-part.user-information {
+  max-width: 50%;
 }
-.login-content-part.user-information .main-form-part{
-    padding: 60px 40px 30px;
+.login-content-part.user-information .main-form-part {
+  padding: 60px 40px 30px;
 }
 /* product information */
-.login-content-part.product-information{
-    max-width: 50%;
+.login-content-part.product-information {
+  max-width: 50%;
 }
-@media screen and (max-width: 1440px){
-    .login-content-part{
-        max-width: 80%;
-    }
-    .login-content-part.user-information {
-        max-width: 70%;
-    }
-    .login-content-part.product-information{
-        max-width: 70%;
-    }
+@media screen and (max-width: 1440px) {
+  .login-content-part {
+    max-width: 80%;
+  }
+  .login-content-part.user-information {
+    max-width: 70%;
+  }
+  .login-content-part.product-information {
+    max-width: 70%;
+  }
 }
-@media screen and (max-width: 1120px){
-    .login-content-part{
-        max-width: 90%;
-    }
-    .scanner-block .scan-block{
-        width: 100%;
-    }
-    .main-form-part{
-        padding: 80px 60px;
-    }
+@media screen and (max-width: 1120px) {
+  .login-content-part {
+    max-width: 90%;
+  }
+  .scanner-block .scan-block {
+    width: 100%;
+  }
+  .main-form-part {
+    padding: 80px 60px;
+  }
 }
-@media screen and (max-width:1024px) {
-    .login-content-part.user-information {
-        max-width: 80%;
-    }
+@media screen and (max-width: 1024px) {
+  .login-content-part.user-information {
+    max-width: 80%;
+  }
 }
 @media screen and (max-width: 991px) {
-    .scanner-block{
-        margin-top: 30px;
-    }
-    .scanner-block .scan-block {
-        width: 60%;
-    }
-    .login-form-order{
-        order: 1;
-    }
-    .login-content-part.product-information {
-        max-width: 80%;
-    }
+  .scanner-block {
+    margin-top: 30px;
+  }
+  .scanner-block .scan-block {
+    width: 60%;
+  }
+  .login-form-order {
+    order: 1;
+  }
+  .login-content-part.product-information {
+    max-width: 80%;
+  }
 }
-@media screen and (max-width: 767px){
-    .scanner-block .scan-block {
-        width: 80%;
-    }
-    .main-form-part .close-modal-btn img{
-        width: 70%;
-    }
-    .main-form-part .close-modal-btn{
-        right: 20px;
-        top: 20px;
-    }
-    .login-content-part.user-information {
-        max-width: 100%;
-    }
-    .login-content-part.product-information {
-        max-width: 100%;
-    }
-    .login-content-part.user-information .main-form-part {
-        padding: 40px 20px 30px;
-    }
+@media screen and (max-width: 767px) {
+  .scanner-block .scan-block {
+    width: 80%;
+  }
+  .main-form-part .close-modal-btn img {
+    width: 70%;
+  }
+  .main-form-part .close-modal-btn {
+    right: 20px;
+    top: 20px;
+  }
+  .login-content-part.user-information {
+    max-width: 100%;
+  }
+  .login-content-part.product-information {
+    max-width: 100%;
+  }
+  .login-content-part.user-information .main-form-part {
+    padding: 40px 20px 30px;
+  }
 }
-@media screen and (max-width: 560px){
-    .main-form-part {
-        padding: 60px 40px;
-    }
-    .travel-information .main-form-part {
-        padding: 60px 30px;
-    }
-    .scanner-block .scan-block {
-        width: 90%;
-    }
-    .login-content-part .inner-form-part .form-part {
-        max-width: 100%;
-    }
-    .login-content-part {
-        max-width: 95%;
-    }
-    .main-form-part {
-        padding: 60px 30px;
-    }
-    .main-form-part .close-modal-btn img{
-        width: 60%;
-    }
-    .main-form-part .close-modal-btn, .travel-information .main-form-part .close-modal-btn {
-        right:10px;
-        top: 10px;
-    }
-    .login-content-part .nav-pills .nav-link{
-        font-size: 24px;
-        margin-right: 16px;
-    }
-    .login-tab-content-part .nav-pills .nav-link.active{
-        padding: 4px 16px 8px 16px;
-    }
-    .scanner-block {
-        margin-top: 0px;
-    }
-    .scanner-block .scan-block {
-        width: 100%;
-    }
-    .login-content-part .inner-form-part .form-part .login-with-part .icon-part a {
-        margin-right: 12px;
-    }
-    .travel-information-content-part .field-data {
-        margin-bottom: 10px;
-    }
-    .travel-information-content-part p{
-        font-size: 20px;
-        line-height: 28px;
-        margin-bottom: 10px;
-    }
-    .field-data.combine-field .send-otp{
-        font-size: 18px;
-        line-height: 20px;
-        min-width: 110px;
-        padding: 4px 10px;
-    }
+@media screen and (max-width: 560px) {
+  .main-form-part {
+    padding: 60px 40px;
+  }
+  .travel-information .main-form-part {
+    padding: 60px 30px;
+  }
+  .scanner-block .scan-block {
+    width: 90%;
+  }
+  .login-content-part .inner-form-part .form-part {
+    max-width: 100%;
+  }
+  .login-content-part {
+    max-width: 95%;
+  }
+  .main-form-part {
+    padding: 60px 30px;
+  }
+  .main-form-part .close-modal-btn img {
+    width: 60%;
+  }
+  .main-form-part .close-modal-btn,
+  .travel-information .main-form-part .close-modal-btn {
+    right: 10px;
+    top: 10px;
+  }
+  .login-content-part .nav-pills .nav-link {
+    font-size: 24px;
+    margin-right: 16px;
+  }
+  .login-tab-content-part .nav-pills .nav-link.active {
+    padding: 4px 16px 8px 16px;
+  }
+  .scanner-block {
+    margin-top: 0px;
+  }
+  .scanner-block .scan-block {
+    width: 100%;
+  }
+  .login-content-part
+    .inner-form-part
+    .form-part
+    .login-with-part
+    .icon-part
+    a {
+    margin-right: 12px;
+  }
+  .travel-information-content-part .field-data {
+    margin-bottom: 10px;
+  }
+  .travel-information-content-part p {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+  .field-data.combine-field .send-otp {
+    font-size: 18px;
+    line-height: 20px;
+    min-width: 110px;
+    padding: 4px 10px;
+  }
 }
 @media screen and (max-width: 320px) {
-    .field-data.combine-field{
-        flex-wrap: wrap;
-    }
-    .input-field-data.short-field{
-        width: 100%;
-    }
+  .field-data.combine-field {
+    flex-wrap: wrap;
+  }
+  .input-field-data.short-field {
+    width: 100%;
+  }
 }
