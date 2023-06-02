@@ -1,0 +1,133 @@
+:root {
+    --primary: #00FF9D;
+    --white: #ffffff;
+    --black: #000;
+    --theme-blue: #00CAF9;
+  }
+  .login-content-part.refer-information{
+    margin: 60px auto 20px;
+  }
+  .login-content-part.refer-information .main-form-part{
+    padding: 50px 100px;
+  }
+.refer-information .refer-part h4{
+    text-align: left;
+    font-size: 35px;
+    line-height: 47px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-family: "Helvetica Neue";
+    color: #FFF;
+}
+.refre-card-information .refer-card-image{
+    margin: 36px 0 20px;
+    border: 1px solid var(--primary);
+    border-radius: 22px;
+    background-image: url('../images/refer-backImage.png');
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+.refre-card-information .refer-card-image .banner-text{
+    max-width: 30%;
+}
+.refre-card-information .refer-card-image .banner-text h5{
+    color: var(--primary);
+    font-size: 36px;
+    font-family: 'Rajdhani';
+    font-weight: 400;
+}
+.refre-card-information .refer-card-image .banner-text  p{
+    font-size: 18px;
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    color: var(--white);
+}
+.refre-card-information .refer-card-image .banner-text .learn-more{
+    font-size: 14px;
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 2px 16px 4px;
+}
+.refer-information .refer-card-content h6{
+    font-family: 'Helvetica Neue';
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 400;
+}
+.refer-information .refer-card-content p{
+    font-family: 'Helvetica Neue';
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    font-weight: 400;
+}
+.refer-information .refer-card-content p a{
+    color: #00CAF9;
+    text-decoration: none;
+}
+.refer-card-social{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.refer-card-social .coppy-data-part{
+    display: flex;
+    align-items: center;
+}
+.refer-card-social .coppy-data-part p{
+    font-family: 'Helvetica Neue';
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-right: 12px;
+}
+.refer-card-social .coppy-data-part .input-box{
+    position: relative;
+}
+.refer-card-social .coppy-data-part .input-box .coppy-icon{
+    position: absolute;
+    color: #707070;
+    right: 8px;
+    top: 6px;
+    font-size: 22px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.refer-card-social .coppy-data-part .input-box .coppy-field{
+    padding: 12px 34px 12px 18px;
+    font-family: 'Helvetica Neue';
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    font-weight: 400;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    width: 200px;
+}
+.social-media{
+    display: flex;
+    gap: 20px;
+}
+.social-icon{
+    height: 50px;
+    width: 50px;
+    background-color: var(--primary);
+    border-radius: 6px;
+    text-align: center;
+}
+.social-icon a{
+    color: #000;
+    text-decoration: none;
+    font-size: 32px;
+    text-align: center;
+}

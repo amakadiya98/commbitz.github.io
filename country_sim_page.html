@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/login.css" />
     <link rel="stylesheet" href="./assets/css/country_sim.css">
@@ -67,23 +70,38 @@
         <div class="container">
             <div class="main-form-part">
                 <button class="close-modal-btn">
-                    <img src="./assets/images/close-modal.svg" alt="close"/>
+                    <img src="./assets/images/close-modal.svg" alt="close" />
                 </button>
-               <div class="verticale-tab-content-part">
+                <div class="verticale-tab-content-part">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-lg-4 col-12">
                             <div class="left-part">
                                 <div class="user-name-part">
                                     <h6>Mathew John</h6>
                                 </div>
-                                <div class="v-tab-part"> 
-                                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                        <button class="nav-link" id="v-pills-country-tab" data-bs-toggle="pill" data-bs-target="#v-pills-country" type="button" role="tab" aria-controls="v-pills-country" aria-selected="true">Countries & SIMs</button>
-                                        <button class="nav-link active" id="v-pills-account-tab" data-bs-toggle="pill" data-bs-target="#v-pills-account" type="button" role="tab" aria-controls="v-pills-account" aria-selected="false">Account information</button>
-                                        <button class="nav-link" id="v-pills-wallet-tab" data-bs-toggle="pill" data-bs-target="#v-pills-wallet" type="button" role="tab" aria-controls="v-pills-wallet" aria-selected="false">Wallets </button>
-                                        <button class="nav-link" id="v-pills-sim-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sim" type="button" role="tab" aria-controls="v-pills-sim" aria-selected="false">My SIMs</button>
-                                        <button class="nav-link" id="v-pills-works-tab" data-bs-toggle="pill" data-bs-target="#v-pills-works" type="button" role="tab" aria-controls="v-pills-works" aria-selected="false">How it works? </button>
-                                        <button class="nav-link" id="v-pills-faq-tab" data-bs-toggle="pill" data-bs-target="#v-pills-faq" type="button" role="tab" aria-controls="v-pills-faq" aria-selected="false">FAQs</button>
+                                <div class="v-tab-part">
+                                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                                        aria-orientation="vertical">
+                                        <button class="nav-link" id="v-pills-country-tab" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-country" type="button" role="tab"
+                                            aria-controls="v-pills-country" aria-selected="true">Countries &
+                                            SIMs</button>
+                                        <button class="nav-link active" id="v-pills-account-tab" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-account" type="button" role="tab"
+                                            aria-controls="v-pills-account" aria-selected="false">Account
+                                            information</button>
+                                        <button class="nav-link" id="v-pills-wallet-tab" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-wallet" type="button" role="tab"
+                                            aria-controls="v-pills-wallet" aria-selected="false">Wallets </button>
+                                        <button class="nav-link" id="v-pills-sim-tab" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-sim" type="button" role="tab"
+                                            aria-controls="v-pills-sim" aria-selected="false">My SIMs</button>
+                                        <button class="nav-link" id="v-pills-works-tab" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-works" type="button" role="tab"
+                                            aria-controls="v-pills-works" aria-selected="false">How it works? </button>
+                                        <button class="nav-link" id="v-pills-faq-tab" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-faq" type="button" role="tab"
+                                            aria-controls="v-pills-faq" aria-selected="false">FAQs</button>
                                     </div>
                                 </div>
                                 <div class="logout-part">
@@ -93,42 +111,81 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-lg-8 col-12">
                             <div class="main-v-tab-content-part">
-                                <div class="tab-content" id="v-pills-tabContent">
-                                    <div class="tab-pane fade" id="v-pills-country" role="tabpanel" aria-labelledby="v-pills-country-tab">
-                                        <div class="coutry-tab-block">
-                                            <p class="common-text">Where are you going?</p>
+                                <div class="tab-content h-100 d-flex w-100" id="v-pills-tabContent">
+                                    <div class="tab-pane fade w-100" id="v-pills-country" role="tabpanel"
+                                        aria-labelledby="v-pills-country-tab">
+                                        <div class='d-flex h-100 align-items-center'>
+                                            <div class="coutry-tab-block w-100">
+                                                <p class="common-text">Where are you going?</p>
+                                                <select class="country-drop-btn custom-select" id="country-dropdown">
+                                                    <option value="" selected disabled>Select Country</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade show active" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-account-tab">
+                                    <div class="tab-pane fade show active" id="v-pills-account" role="tabpanel"
+                                        aria-labelledby="v-pills-account-tab">
                                         <div class="account-tab-block">
                                             <p class="common-text">Account Information</p>
                                             <div class="row form-part">
                                                 <div class="col-md-12">
                                                     <div class="field">
-                                                        <input type="text" class="input-field-data" placeholder="Name"/>
+                                                        <input type="text" class="input-field-data"
+                                                            placeholder="Name" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="field">
-                                                        <input type="tel" class="input-field-data" placeholder="Phone Number"/>
+                                                        <input type="tel" class="input-field-data"
+                                                            placeholder="Phone Number" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="field">
-                                                        <input type="email" class="input-field-data" placeholder="Email"/>
-                                                        <button class="small-change-btn">Change</button>
+                                                        <input type="email" class="input-field-data"
+                                                            placeholder="Email" />
+                                                        <!-- Button trigger modal -->
+                                                        <button type="button" class="small-change-btn"
+                                                            data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                                                            Change
+                                                        </button>
+
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="exampleModalCenter" tabindex="-1"
+                                                            role="dialog" aria-labelledby="exampleModalCenterTitle"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered"
+                                                                role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-body">
+                                                                        <div class='inside-modal'>
+                                                                            <h6>Do you need another eSIM?</h6>
+                                                                            <div class='action-part'>
+                                                                                <button type="button"
+                                                                                    class="delete-sm-btn"
+                                                                                    data-bs-dismiss="modal">Cancel</button>
+                                                                                <button type="button"
+                                                                                    class="small-change-btn">Refer and
+                                                                                    Earn</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="checkbox-with-text ms-2">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
                                                             <label class="form-check-label" for="flexCheckDefault">
                                                                 I’d like to receive promotional emails.
                                                             </label>
-                                                          </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-5">
@@ -138,26 +195,122 @@
                                                 <div class="col-md-7">
                                                     <div class="delete-block-part">
                                                         <h6>Delete Account</h6>
-                                                        <p>You can delete your account permanently. *Note that this process can take a while and can’t be undone after completion</p>
+                                                        <p>You can delete your account permanently. *Note that this
+                                                            process can take a while and can’t be undone after
+                                                            completion</p>
                                                         <button class="delete-sm-btn">Delete Account</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="v-pills-wallet" role="tabpanel" aria-labelledby="v-pills-wallet-tab">...</div>
-                                    <div class="tab-pane fade" id="v-pills-sim" role="tabpanel" aria-labelledby="v-pills-sim-tab">...</div>
-                                    <div class="tab-pane fade" id="v-pills-works" role="tabpanel" aria-labelledby="v-pills-works-tab">...</div>
-                                    <div class="tab-pane fade" id="v-pills-faq" role="tabpanel" aria-labelledby="v-pills-faq-tab">...</div>
-                                  </div>
+                                    <div class="tab-pane fade" id="v-pills-wallet" role="tabpanel"
+                                        aria-labelledby="v-pills-wallet-tab">
+                                        <div class='wallet-tab-block'>
+                                            <div class="wallet-content">
+                                                <h6 class="wallet-tab-heading">Add money to your balance</h6>
+                                                <div class="balance-part">
+                                                    <p>Available Balance: <span>$ 124</span></p>
+                                                    <button class="add-money-btn">Add Money</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-sim" role="tabpanel"
+                                        aria-labelledby="v-pills-sim-tab">
+                                        <div class='sim-tab-block'>
+                                            <div class='sim-content'>
+                                                <h6 class="sim-tab-heading">No SIM yet...</h6>
+                                                <div class='sim-block'></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-works" role="tabpanel"
+                                        aria-labelledby="v-pills-works-tab">
+                                        <div class='work-tab-block'>
+                                            <div class="row image-slide">
+                                                <div class="col-md-3 mobile-image-postion">
+                                                    <div class="mobile">
+                                                        <img src="./assets/images/homePage/mobile-1.png" alt="Mobile-1"
+                                                            class="mobile-img">
+                                                        <p class="step">Select your destination and package</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 mobile-image-postion">
+                                                    <div class="mobile">
+                                                        <img src="./assets/images/homePage/mobile-2.png" alt="Mobile-2"
+                                                            class="mobile-img">
+                                                        <p class="step">Install your Commbitz eSIM</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 mobile-image-postion">
+                                                    <div class="mobile">
+                                                        <img src="./assets/images/homePage/mobile-3.png" alt="Mobile-3"
+                                                            class="mobile-img">
+                                                        <p class="step">Activate your eSIM through the app</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 mobile-image-postion">
+                                                    <div class="mobile">
+                                                        <img src="./assets/images/homePage/mobile-4.png" alt="Mobile-3"
+                                                            class="mobile-img">
+                                                        <p class="step">Restart your phone after activation</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-faq" role="tabpanel"
+                                        aria-labelledby="v-pills-faq-tab">...</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-               </div>
+                </div>
             </div>
         </div>
     </section>
     <script src="./assets/Js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./assets/Js/bootstrap.bundle.min.js"></script>
+    <script>
+        var countries = [
+            { name: "United States", flag: "./assets/images/tab-flag/Group 2256.png" },
+            { name: "China", flag: "./assets/images/tab-flag/Group 2267.png" },
+            { name: "India", flag: "./assets/images/tab-flag/Group 2253.png" },
+            { name: "Fuji", flag: "./assets/images/tab-flag/Group 1889.png" }
+        ];
+
+        function populateDropdown() {
+            var dropdown = document.getElementById("country-dropdown");
+
+            countries.forEach(function (country) {
+                var option = document.createElement("option");
+                option.value = country.name.toLowerCase();
+                option.text = country.name;
+                option.dataset.image = country.flag;
+                dropdown.appendChild(option);
+            });
+        }
+
+        window.addEventListener("load", populateDropdown);
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#country-dropdown').select2({
+                templateResult: formatOption
+            });
+        });
+
+        function formatOption(option) {
+            if (!option.id) {
+                return option.text;
+            }
+
+            var $option = $('<span><img src="' + $(option.element).data('image') + '" class="select2-flag" /> ' + option.text + '</span>');
+            return $option;
+        }
+    </script>
 </body>
+
 </html>

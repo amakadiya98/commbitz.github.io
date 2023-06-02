@@ -218,7 +218,9 @@ button:hover {
 .travel-data-filed {
   margin-top: 36px;
 }
-
+.choose-currency-part .currency-group{
+  margin-top: 38px;
+}
 .travel-information-content-part .custom-drop-down .country-down-btn {
   width: 100%;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -318,6 +320,43 @@ button:hover {
 .login-content-part.product-information {
   max-width: 50%;
 }
+
+
+/* choose currency page */
+.currency-group {
+  width: 100%;
+}
+.currency-group h4{
+  text-align: left;
+  font-size: 35px;
+  line-height: 47px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-family: "Helvetica Neue";
+  color: #FFF;
+}
+
+.currency-group .radio-group{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1440px) {
   .login-content-part {
     max-width: 80%;

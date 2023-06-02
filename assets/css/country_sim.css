@@ -1,68 +1,68 @@
 :root {
-    --primary: #00FF9D;
-    --white: #ffffff;
-    --black: #000;
-    --theme-blue: #00CAF9;
-  }
-.login-content-part.coutry_sim_page{
-    max-width: 70%;
+  --primary: #00ff9d;
+  --white: #ffffff;
+  --black: #000;
+  --theme-blue: #00caf9;
 }
-.verticale-tab-content-part .left-part{
-    background-color: #fff;
-    border-radius: 25px;
-    padding: 40px 32px;
-    min-height: 560px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+.login-content-part.coutry_sim_page {
+  max-width: 70%;
 }
-.verticale-tab-content-part .left-part .v-tab-part{
-    flex: 2;
-    margin-top: 40px;
+.verticale-tab-content-part .left-part {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 40px 32px;
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
-.verticale-tab-content-part .left-part .logout-btn{
-    font-size: 18px;
-    line-height: 30px;
-    font-family: 'Helvetica Neue';
-    color: #000;
-    font-weight: 500;
-    background-color: transparent;
-    border: 0;
-    border-bottom: 1px solid #000;
-    padding: 0;
+.verticale-tab-content-part .left-part .v-tab-part {
+  flex: 2;
+  margin-top: 40px;
 }
-.verticale-tab-content-part .left-part .user-name-part h6{
-    font-size: 24px;
-    line-height: 30px;
-    font-family: 'Helvetica Neue';
-    color: #000;
+.verticale-tab-content-part .left-part .logout-btn {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Helvetica Neue";
+  color: #000;
+  font-weight: 500;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #000;
+  padding: 0;
 }
-.v-tab-part .nav-pills .nav-link{
-    font-size: 18px;
-    line-height: 28px;
-    font-family: 'Helvetica Neue';
-    color: #666666;
-    border-radius: 0;
-    text-align: left;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 10px;
+.verticale-tab-content-part .left-part .user-name-part h6 {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Helvetica Neue";
+  color: #000;
 }
-.v-tab-part .nav-pills .nav-link.active{
-    background-color: transparent;
-    color: #000000;
-    font-weight: 500;
-    border-bottom: 1px solid #000;
+.v-tab-part .nav-pills .nav-link {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Helvetica Neue";
+  color: #666666;
+  border-radius: 0;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
 }
-.v-tab-part button:hover{
-    color: #000 !important;
-    font-weight: 500;
+.v-tab-part .nav-pills .nav-link.active {
+  background-color: transparent;
+  color: #000000;
+  font-weight: 500;
+  border-bottom: 1px solid #000;
 }
-.main-v-tab-content-part{
-    max-width: 80%;
-    margin: auto;
-    height: 100%;
+.v-tab-part button:hover {
+  color: #000 !important;
+  font-weight: 500;
+}
+.main-v-tab-content-part {
+  max-width: 80%;
+  margin: auto;
+  height: 100%;
 }
 /* .main-v-tab-content-part .tab-content{
     height: 100%;
@@ -73,86 +73,475 @@
     flex-direction: column;
     justify-content: center;
 } */
-.main-v-tab-content-part p.common-text{
-    font-size: 35px;
-    line-height: 48px;
-    color: #fff;
-    font-family: 'Helvetica Neue';
+.main-v-tab-content-part p.common-text {
+  font-size: 35px;
+  line-height: 48px;
+  color: #fff;
+  font-family: "Helvetica Neue";
 }
 
 .coutry_sim_page .field {
-    margin-bottom: 16px;
-    position: relative;
+  margin-bottom: 16px;
+  position: relative;
 }
 .coutry_sim_page .input-field-data {
-    width: 100%;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #fff;
-    border-radius: 12px;
-    opacity: 1;
-    text-align: left;
-    font-family: 'Helvetica Neue';
+  width: 100%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  opacity: 1;
+  text-align: left;
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  line-height: 22px;
+  color: #666666;
+  padding: 12px 18px;
+}
+.coutry_sim_page .input-field-data:focus {
+  border: 1px solid var(--primary);
+}
+.coutry_sim_page .form-part {
+  margin-top: 30px;
+}
+.coutry_sim_page .small-change-btn {
+  position: absolute;
+  background-color: #000;
+  color: var(--primary);
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  border: 1px solid #000;
+  right: 10px;
+  top: 10px;
+  border-radius: 20px;
+  padding: 2px 16px 4px;
+}
+.common-btn {
+  background-color: var(--primary);
+  color: var(--black);
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  padding: 4px 18px 6px;
+  border: 0;
+  border-radius: 26px;
+}
+.de-active-btn {
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 0;
+  padding: 2px 12px;
+  margin-top: 22px;
+  margin-left: 4px;
+}
+.delete-block-part h6 {
+  color: #666666;
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.delete-block-part p {
+  color: #666666;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  line-height: 18px;
+  margin: 8px 0;
+}
+.delete-sm-btn {
+  background-color: transparent;
+  color: #ff0031;
+  border: 1px solid #ff0031;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  padding: 2px 16px 4px;
+  border-radius: 20px;
+}
+
+/* select2 custom css start */
+.login-content-part.coutry_sim_page
+  .select2-container--default
+  .select2-selection--single {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+  width: 600px;
+  height: 55px;
+  border-radius: 32px;
+  text-align: left;
+  font: normal normal normal 24px/28px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #666666;
+  padding: 12px 10px 12px 23px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.login-content-part.coutry_sim_page
+  .select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: #00fe9c;
+  color: #000;
+}
+.login-content-part.coutry_sim_page
+  .select2-container
+  .select2-selection--single
+  .select2-selection__rendered {
+  padding-left: 0;
+}
+.login-content-part.coutry_sim_page
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  display: none;
+}
+
+.login-content-part.coutry_sim_page
+  .select2-container--default
+  .select2-selection--single::after {
+  content: "";
+  background-image: url("../images/homePage/drop-green.png");
+  width: 50px;
+  height: 49px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  margin-top: 4px;
+  transform: translateY(-50%);
+}
+
+.login-content-part.coutry_sim_page
+  .select2-container--default
+  .select2-results__option
+  .select2-flag {
+  width: 30px !important;
+  margin-right: 5px !important;
+}
+.login-content-part.coutry_sim_page
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  margin-right: 40px;
+}
+.modal-dialog {
+  max-width: 350px;
+}
+.modal-content {
+  border-radius: 18px;
+}
+.inside-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 40px;
+}
+.inside-modal h6 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: "Helvetica Neue";
+  color: #000;
+}
+.action-part {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.modal .modal-body .inside-modal .small-change-btn {
+  position: relative;
+  top: unset;
+  right: unset;
+}
+.modal .modal-body .inside-modal .delete-sm-btn {
+  color: black;
+  border-color: black;
+}
+.wallet-tab-block,
+.sim-tab-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.wallet-tab-block .wallet-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 65px;
+}
+.sim-tab-block .sim-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.wallet-tab-block .wallet-tab-heading,
+.sim-tab-block .sim-tab-heading {
+  text-align: left;
+  font-size: 35px;
+  line-height: 47px;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.wallet-tab-block .balance-part {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.wallet-tab-block .balance-part p {
+  text-align: left;
+  font-size: 24px;
+  line-height: 47px;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin: 0;
+}
+.wallet-tab-block .balance-part p span {
+  text-align: left;
+  font-size: 40px;
+  line-height: 49px;
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-inline-start: 10px;
+}
+.balance-part .add-money-btn {
+  background-color: #00ff9d;
+  padding: 10px 14px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  letter-spacing: 0;
+  color: black;
+  border-radius: 23px;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+.work-tab-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.work-tab-block .image-slide {
+  width: 100%;
+}
+.work-tab-block .image-slide-section .mobile-image-postion {
+  display: flex;
+  justify-content: center;
+}
+.mobile {
+  width: 100%;
+}
+.mobile img {
+  width: 100%;
+}
+.step {
+  color: #ffffff;
+  width: 85%;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 14px;
+}
+@media screen and (max-width: 1440px) {
+  .login-content-part.coutry_sim_page .main-form-part {
+    padding: 60px 80px;
+  }
+  .login-content-part.coutry_sim_page .main-v-tab-content-part {
+    max-width: 95%;
+  }
+  .common-btn {
     font-size: 18px;
-    line-height: 22px;
-    color: #666666;
-    padding: 12px 18px;
+  }
+  .de-active-btn {
+    font-size: 12px;
+  }
 }
-.coutry_sim_page .input-field-data:focus{
-    border: 1px solid var(--primary);
-}
-.coutry_sim_page .form-part{
-    margin-top: 30px;
-}
-.coutry_sim_page .small-change-btn{
-    position: absolute;
-    background-color: #000;
-    color: var(--primary);
-    font-family: 'Helvetica Neue';
-    font-size: 14px;
-    border: 1px solid #000;
-    right: 10px;
-    top: 10px;
-    border-radius: 20px;
-    padding: 2px 16px 4px;
-}
-.common-btn{
-    background-color: var(--primary);
-    color: var(--black);
-    font-family: 'Helvetica Neue';
-    font-size: 24px;
-    padding: 4px 18px 6px;
-    border: 0;
-    border-radius: 26px;
-}
-.de-active-btn{
-    font-family: 'Helvetica Neue';
-    font-size: 14px;
-    border-radius: 20px;
-    background-color: #fff;
-    border: 0;
-    padding: 2px 12px;
-    margin-top: 22px;
-    margin-left: 4px;
-}
-.delete-block-part h6{
-    color: #666666;
-    font-family: 'Helvetica Neue';
+
+@media screen and (max-width: 1199px) {
+  .login-content-part.coutry_sim_page .main-form-part {
+    padding: 50px 40px 40px;
+  }
+  .verticale-tab-content-part .left-part {
+    padding: 30px 22px;
+  }
+  .v-tab-part .nav-pills .nav-link {
+    font-size: 16px;
+  }
+  .main-v-tab-content-part p.common-text {
+    font-size: 30px;
+  }
+  .verticale-tab-content-part .left-part .user-name-part h6 {
+    font-size: 20px;
+  }
+  .common-btn {
+    font-size: 16px;
+  }
+  .de-active-btn {
+    font-size: 10px;
+  }
+  .wallet-tab-block .wallet-tab-heading {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .wallet-tab-block .balance-part p {
     font-size: 18px;
+    line-height: 42px;
+  }
+  .wallet-tab-block .balance-part p span {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .balance-part .add-money-btn {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .verticale-tab-content-part .left-part {
+    min-height: 450px;
+  }
+
+  .login-content-part.coutry_sim_page
+    .main-form-part
+    .verticale-tab-content-part
+    .row {
+    --bs-gutter-y: 1.5rem;
+  }
+  .login-content-part.coutry_sim_page .main-form-part .close-modal-btn {
+    right: 5px;
+    top: 2px;
+  }
+  .login-content-part.coutry_sim_page .main-form-part .close-modal-btn img {
+    width: 45%;
+  }
+  .wallet-tab-block .wallet-content {
+    gap: 30px;
+  }
+  .wallet-tab-block .balance-part {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .coutry_sim_page .form-part {
+    margin-top: 0;
+  }
+  .login-content-part.coutry_sim_page .main-v-tab-content-part p.common-text {
     margin-bottom: 0;
+  }
+  .de-active-btn {
+    font-size: 14px;
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  .checkbox-with-text {
+    margin-bottom: 0;
+  }
 }
-.delete-block-part p{
-    color: #666666;
-    font-family: 'Helvetica Neue';
+
+@media screen and (max-width: 600px) {
+  .de-active-btn {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+  .coutry_sim_page .input-field-data {
     font-size: 14px;
     line-height: 18px;
-    margin: 8px 0;
-}
-.delete-sm-btn{
-    background-color: transparent;
-    color: #FF0031;
-    border: 1px solid #FF0031;
-    font-family: 'Helvetica Neue';
+    padding: 8px 14px;
+  }
+  .coutry_sim_page .small-change-btn {
+    right: 5px;
+    top: 4px;
+  }
+  .checkbox-with-text label {
     font-size: 14px;
-    padding: 2px 16px 4px;
-    border-radius: 20px;
+  }
+  .login-content-part.coutry_sim_page .select2-container--default {
+    margin-top: 15px;
+  }
+  .login-content-part.coutry_sim_page
+    .select2-container--default
+    .select2-selection--single {
+    height: 45px;
+  }
+  .login-content-part.coutry_sim_page
+    .select2-container--default
+    .select2-selection--single::after {
+    height: 40px;
+    width: 42px;
+    margin-top: 0;
+  }
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    font-size: 18px;
+  }
+  .wallet-tab-block .wallet-tab-heading {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .wallet-tab-block .balance-part p {
+    font-size: 14px;
+    line-height: 32px;
+  }
+  .wallet-tab-block .balance-part p span {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .balance-part .add-money-btn {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .login-content-part.coutry_sim_page .main-form-part {
+    padding: 30px 20px 20px;
+  }
+  .login-content-part.coutry_sim_page .main-form-part .close-modal-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .verticale-tab-content-part .left-part {
+    padding: 20px 15px;
+    min-height: 350px;
+  }
+  .login-content-part.coutry_sim_page .main-form-part {
+    padding: 15px;
+    padding-top: 30px;
+  }
+  .verticale-tab-content-part .left-part .v-tab-part {
+    margin-top: 15px;
+  }
+  .login-content-part.coutry_sim_page .main-v-tab-content-part p.common-text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .row > * {
+    margin-top: 5px;
+  }
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    font-size: 14px;
+  }
 }

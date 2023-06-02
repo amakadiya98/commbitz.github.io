@@ -541,7 +541,7 @@ header {
 
 
 .flag-country-box {
-  padding: 16px 21px;
+  padding: 10px 21px;
   background-color: #fff;
   border: 1px solid #00FF9D;
   border-radius: 20px;
@@ -1269,7 +1269,7 @@ footer .right-part .bottom-side .text-one a {
 }
 
 .partner-with-us .rectangle {
-  padding: 32px 48px;
+  padding: 32px 36px;
 }
 
 .partner-with-us .rectangle h5 {
@@ -1503,6 +1503,9 @@ footer .right-part .bottom-side .text-one a {
     width: 100%;
     z-index: -1;
   }
+  .banner-section .privacy-block{
+    width: 85%;
+  }
 }
 @media screen and (max-width:1440px) {
   .download-app::before {
@@ -1526,7 +1529,9 @@ footer .right-part .bottom-side .text-one a {
   .price-buy-btn .badge-sm-btn{
     padding: 8px 20px;
   }
-  
+  .banner-section .privacy-block{
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 1399px) {
@@ -1563,6 +1568,9 @@ footer .right-part .bottom-side .text-one a {
   width: 80%;
   z-index: -1;
 }
+.banner-section .privacy-block {
+  width: 84%;
+}
 }
 
 @media screen and (max-width:1280px) {
@@ -1588,6 +1596,9 @@ footer .right-part .bottom-side .text-one a {
     bottom: -10px;
     width: 90%;
     z-index: -1;
+  }
+  .banner-section .privacy-block {
+    width: 88%;
   }
 }
 
