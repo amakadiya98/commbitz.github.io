@@ -1,123 +1,188 @@
 :root {
-    --primary: #00FF9D;
-    --white: #ffffff;
-    --black: #000;
-    --theme-blue: #00CAF9;
+  --primary: #00ff9d;
+  --white: #ffffff;
+  --black: #000;
+  --theme-blue: #00caf9;
+}
+.login-content-part.buyNow-information {
+  max-width: 75%;
+}
+.buy-card {
+  max-width: 80%;
+  margin: 4rem auto;
+}
+.buy-data-ctr-card {
+  border: 1px solid var(--primary);
+  height: 185px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+}
+
+.buy-card p {
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  font-weight: 600;
+  font-family: "Helvetica Neue";
+  text-align: center;
+  color: var(--white);
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+.main-card-data-info {
+  /* max-width: 80%; */
+}
+.main-card-data-info .start-part img {
+  filter: invert(1);
+}
+.main-card-data-info .buy-data-card {
+  margin-top: 40px;
+}
+.main-card-data-info .buy-data-card .field {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 14px;
+}
+.main-card-data-info .buy-data-card .field p {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: "Helvetica Neue";
+  color: #fff;
+  margin-bottom: 4px;
+}
+.main-card-data-info .buy-data-card .field i {
+  margin-right: 10px;
+}
+.main-card-data-info .buy-data-card .field i.rotate-icon {
+  transform: rotate(90deg);
+}
+.main-card-data-info .buy-data-card .field .icon {
+  flex: 1;
+}
+.main-card-data-info .buy-data-card .field p.right-part {
+  flex: 1;
+  text-align: right;
+}
+.supported-country.show-drop-dwon {
+  margin-top: 60px;
+}
+.supported-country.show-drop-dwon .title-arrow {
+  display: flex;
+  color: var(--white);
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--primary);
+}
+.supported-country.show-drop-dwon .title-arrow h6 {
+  font-size: 35px;
+  line-height: 47px;
+  font-weight: 400;
+  font-family: "Helvetica Neue";
+  margin-bottom: 0;
+}
+.supported-country.show-drop-dwon .title-arrow i {
+  color: var(--primary);
+  font-size: 26px;
+}
+.supported-country.show-drop-dwon .supported-data p {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: "Helvetica Neue";
+  margin-bottom: 0;
+  color: var(--white);
+}
+.supported-country.show-drop-dwon .supported-data .flag-data {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 90%;
+}
+.supported-data .flag-data img {
+  width: 44px;
+}
+.supported-country.show-drop-dwon .supported-data {
+  margin-top: 10px;
+}
+
+.buyNow-content .bottom-button-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+.buyNow-content .bottom-button-part h6 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+.main-center-part {
+  max-width: 80%;
+  margin: auto;
+}
+.supported-country.show-drop-dwon {
+  max-width: 80%;
+  margin: 60px auto;
+}
+.recommended-add-part {
+  background-color: #252525;
+  padding: 30px;
+  padding-bottom: 50px;
+  border-radius: 47px;
+  max-width: 75%;
+}
+.recommended-add-part .sim-tab-part {
+  padding: 0;
+}
+.recommended-add-part .sim-tab-part h4 {
+  font-size: 35px;
+  line-height: 47px;
+  font-weight: 400;
+  font-family: "Helvetica Neue";
+  margin-bottom: 0;
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+}
+.buyNow-btn {
+  padding: 8px 16px;
+  background-color: var(--primary);
+  border-radius: 23px;
+  box-shadow: none;
+  outline: none;
+  border: 2px solid var(--primary);
+  font-size: 24px;
+  line-height: 29px;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.buyNow-btn:hover {
+  background-color: transparent !important;
+  opacity: 1 !important;
+  color: var(--primary);
+}
+
+
+@media screen and (max-width: 1440px) {
+  .login-content-part.buyNow-information, .login-content-part.recommended-add-part{
+    max-width: 80%;
   }
-.login-content-part.buyNow-information{
-    max-width: 70%;
-}
-.buy-card{
-    max-width: 80%;
-    margin: 4rem auto;
-}
-.buy-data-ctr-card{
-    border: 1px solid var(--primary);
-    height: 185px;
-    max-width: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 18px;
-}
-
-.buy-card p{
-    font-size: 21px;
-    line-height: 25px;
-    letter-spacing: 0px;
-    font-weight: 600;
-    font-family: "Helvetica Neue";
-    text-align: center;
-    color: var(--white);
-    margin-top: 12px;
-    margin-bottom: 0;
-}
-.main-card-data-info{
-    /* max-width: 80%; */
-}
-.main-card-data-info .start-part img{
-    filter: invert(1);
-}
-.main-card-data-info .buy-data-card{
-    margin-top: 40px;
-}
-.main-card-data-info .buy-data-card .field{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #fff;
-    margin-bottom: 14px;
-}
-.main-card-data-info .buy-data-card .field p{
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 400;
-    font-family: "Helvetica Neue";
-    color: #fff;
-    margin-bottom: 4px;
-}
-.main-card-data-info .buy-data-card .field i{
-    margin-right: 10px;
-}
-.main-card-data-info .buy-data-card .field i.rotate-icon{
-    transform: rotate(90deg);
-}
-.main-card-data-info .buy-data-card .field .icon{
-    flex: 1;
-}
-.main-card-data-info .buy-data-card .field p.right-part{
-    flex: 1;
-    text-align: right;
-}
-.supported-country.show-drop-dwon{
-    margin-top: 60px;
-}
-.supported-country.show-drop-dwon .title-arrow{
-    display: flex;
-    color: var(--white);
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--primary);
-}
-.supported-country.show-drop-dwon .title-arrow h6{
-    font-size: 35px;
-    line-height: 47px;
-    font-weight: 400;
-    font-family: "Helvetica Neue";
-    margin-bottom: 0;
-}
-.supported-country.show-drop-dwon .title-arrow i{
-    color: var(--primary);
-    font-size: 26px;
-
-}
-.supported-country.show-drop-dwon .supported-data p{
-    font-size: 24px;
-    line-height: 40px;
-    font-weight: 400;
-    font-family: "Helvetica Neue";
-    margin-bottom: 0;
-    color: var(--white);
-}
-.supported-country.show-drop-dwon .supported-data .flag-data{
-    margin-top: 18px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    max-width: 90%;
-}
-.supported-data .flag-data img{
-    width: 44px;
-}
-.supported-country.show-drop-dwon .supported-data{
-    margin-top: 10px;
-}
-.main-center-part{
-    max-width: 80%;
-    margin: auto;
-}
-.supported-country.show-drop-dwon{
-    max-width: 80%;
-    margin: 60px auto;
+  .login-content-part.buyNow-information .main-form-part{
+    padding: 60px 80px;
+  }
 }

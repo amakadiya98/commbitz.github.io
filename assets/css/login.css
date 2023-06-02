@@ -41,22 +41,28 @@
   width: 100% !important;
   height: 46px;
 }
-.login-content-part .main-form-part .select2-container--default .select2-selection--single{
-    width: 100% !important;
-    border-radius: 12px;
-    height: 46px;
-    border: 1px solid #00CAF9;
-    font-family: "Helvetica Neue";
-    font-size: 18px;
-    padding: 12px 18px;
+.login-content-part
+  .main-form-part
+  .select2-container--default
+  .select2-selection--single {
+  width: 100% !important;
+  border-radius: 12px;
+  height: 46px;
+  border: 1px solid #00caf9;
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  padding: 12px 18px;
 }
-.login-content-part .main-form-part .select2-container--default .select2-selection--single::after {
-    content: '';
-    background-image: url(../images/down.svg);
-    height: 20px;
-    width: 20px;
-    right: 12px;
-    opacity: 0.7;
+.login-content-part
+  .main-form-part
+  .select2-container--default
+  .select2-selection--single::after {
+  content: "";
+  background-image: url(../images/down.svg);
+  height: 20px;
+  width: 20px;
+  right: 12px;
+  opacity: 0.7;
 }
 
 /* select2 css custom end */
@@ -218,9 +224,6 @@ button:hover {
 .travel-data-filed {
   margin-top: 36px;
 }
-.choose-currency-part .currency-group{
-  margin-top: 38px;
-}
 .travel-information-content-part .custom-drop-down .country-down-btn {
   width: 100%;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -321,41 +324,78 @@ button:hover {
   max-width: 50%;
 }
 
+/* choose currency page && suggested language page */
 
-/* choose currency page */
+.login-content-part.currency-information,
+.login-content-part.language-information {
+  max-width: 75%;
+}
+.choose-currency-part .currency-group,
+.suggested-language-part .language-group {
+  margin-top: 38px;
+}
+.radio-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10rem;
+}
+.suggested-language-part .language-group .radio-group {
+  margin-bottom: 0;
+}
+.radiobtn .btn-label {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: 1px solid var(--primary);
+  padding: 8px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.radiobtn input[type="radio"] {
+  display: none;
+}
+
+.radiobtn input[type="radio"]:checked + label {
+  background-color: var(--primary);
+}
+.radiobtn input[type="radio"]:checked + label span {
+  color: #000;
+}
+.radiobtn .btn-label span {
+  font-size: 24px;
+  color: #fff;
+  line-height: 29px;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.radiobtn .btn-label span.symbol {
+  opacity: 0.35;
+  text-align: right;
+}
+
+.radio-group .row {
+  --bs-gutter-y: 1.5rem;
+}
 .currency-group {
   width: 100%;
 }
-.currency-group h4{
+.currency-group h4,
+.language-group h4 {
   text-align: left;
   font-size: 35px;
   line-height: 47px;
   letter-spacing: 0px;
   font-weight: 400;
   font-family: "Helvetica Neue";
-  color: #FFF;
+  color: #fff;
 }
-
-.currency-group .radio-group{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  row-gap: 25px;
-  width: 100%;
-  margin-top: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 1440px) {
   .login-content-part {
@@ -366,6 +406,22 @@ button:hover {
   }
   .login-content-part.product-information {
     max-width: 70%;
+  }
+  .login-content-part.language-information,
+  .login-content-part.currency-information, .login-content-part.language-information {
+    max-width: 80%;
+  }
+  .login-content-part.language-information .main-form-part {
+    padding: 70px 80px;
+  }
+  .radiobtn .btn-label span {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .login-content-part.currency-information .main-form-part {
+    padding: 60px 50px;
   }
 }
 @media screen and (max-width: 1120px) {
@@ -378,10 +434,23 @@ button:hover {
   .main-form-part {
     padding: 80px 60px;
   }
+  .login-content-part.currency-information .main-form-part {
+    padding: 50px 30px;
+  }
+  .radiobtn .btn-label {
+    padding: 5px 10px;
+    font-size: 18px;
+    line-height: 23px;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 1024px) {
   .login-content-part.user-information {
     max-width: 80%;
+  }
+  .radiobtn .btn-label span {
+    font-size: 16px;
+    line-height: 21px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -396,6 +465,9 @@ button:hover {
   }
   .login-content-part.product-information {
     max-width: 80%;
+  }
+  .radiobtn .btn-label {
+    padding: 8px 16px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -418,6 +490,16 @@ button:hover {
   .login-content-part.user-information .main-form-part {
     padding: 40px 20px 30px;
   }
+  .currency-group h4, .language-group h4{
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .login-content-part.language-information .main-form-part {
+    padding: 30px 45px;
+}
 }
 @media screen and (max-width: 560px) {
   .main-form-part {
@@ -480,6 +562,19 @@ button:hover {
     line-height: 20px;
     min-width: 110px;
     padding: 4px 10px;
+  }
+  .login-content-part.language-information .main-form-part,
+  .login-content-part.currency-information .main-form-part{
+    padding: 20px 10px 35px;
+  }
+  .login-content-part.currency-information, .login-content-part.language-information{
+    max-width: 95%;
+  }
+  .login-content-part.currency-information .main-form-part .close-modal-btn img, .login-content-part.language-information .main-form-part .close-modal-btn img {
+    width: 40%;
+  }
+  .radio-group{
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 320px) {
