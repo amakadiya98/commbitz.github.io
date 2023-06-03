@@ -416,7 +416,11 @@
     line-height: 23px;
   }
 }
-
+@media screen and (max-width: 1024px){
+  .login-content-part.coutry_sim_page{
+    max-width: 90%;
+  }
+}
 @media screen and (max-width: 991px) {
   .verticale-tab-content-part .left-part {
     min-height: 450px;
@@ -441,6 +445,7 @@
   .wallet-tab-block .balance-part {
     gap: 15px;
   }
+  
 }
 
 @media screen and (max-width: 767px) {
@@ -511,6 +516,27 @@
     font-size: 14px;
     line-height: 19px;
   }
+  .verticale-tab-content-part{
+    margin: 20px 0;
+  }
+  .login-content-part.coutry_sim_page .main-v-tab-content-part{
+    margin-top: 30px;
+  }
+  .image-slide{
+    margin-top: 50px;
+  }
+  .step{
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .mobile {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .mobile img {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -525,7 +551,7 @@
 @media screen and (max-width: 425px) {
   .verticale-tab-content-part .left-part {
     padding: 20px 15px;
-    min-height: 350px;
+    min-height: 380px;
   }
   .login-content-part.coutry_sim_page .main-form-part {
     padding: 15px;
@@ -544,4 +570,5 @@
   .select2-container .select2-selection--single .select2-selection__rendered {
     font-size: 14px;
   }
+ 
 }
