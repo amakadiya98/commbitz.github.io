@@ -131,3 +131,63 @@
     font-size: 32px;
     text-align: center;
 }
+@media screen and (max-width: 1024px) {
+    .refre-card-information .refer-card-image .banner-text {
+        max-width: 46%;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .login-content-part.refer-information .main-form-part {
+        padding: 50px 50px;
+    }
+    .refre-card-information .refer-card-image .banner-text {
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 620px) {
+    .refer-card-social{
+        flex-wrap: wrap;
+    }
+    .login-content-part.refer-information .main-form-part {
+        padding: 50px 40px;
+    }
+    .refre-card-information .refer-card-image .banner-text {
+        max-width: 90%;
+    }
+    .refre-card-information .refer-card-image .banner-text h5{
+        font-size: 32px;
+    }
+    .refer-card-social .coppy-data-part{
+        flex-wrap: wrap;
+    }
+    .refer-card-social .coppy-data-part .input-box .coppy-field{
+        margin-top: 12px;
+        width: 100%;
+    }
+    .refer-card-social .coppy-data-part .input-box .coppy-icon{
+        top: 18px;
+    }
+    .refer-information .refer-part h4{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .login-content-part.refer-information .main-form-part {
+        padding: 50px 20px;
+    }
+}
+@media screen and (max-width: 325px) {
+    .refre-card-information .refer-card-image .banner-text h5 {
+        font-size: 26px;
+    }
+    .refre-card-information .refer-card-image{
+        min-height: 300px;
+    }
+    .refer-information .refer-card-content h6{
+        font-size: 20px;
+    }
+    .refer-information .refer-card-content p{
+        font-size: 16px;
+    }
+}
