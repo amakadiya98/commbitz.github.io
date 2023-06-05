@@ -1,0 +1,225 @@
+.offers-page .first-section {
+  margin-top: 6rem;
+  width: 100%;
+  height: auto !important;
+}
+.offers-page .first-section .container .content-first {
+  align-items: center;
+  justify-content: center;
+}
+.offers-page .first-section .container .content-first h2 {
+  font-size: 100px;
+  line-height: 96px;
+  width: 50%;
+  font-family: "Rajdhani";
+}
+.offers-page .offers-tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+  gap: 10px;
+}
+.offers-tags div p {
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0;
+  font-weight: 400;
+}
+.offers-tags div span {
+  display: inline-block;
+  height: 26px;
+  width: 1px;
+  background-color: var(--primary);
+}
+.offers-tags > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.second-section {
+  margin-top: 6rem;
+}
+.second-section .offer-card {
+  display: flex;
+  width: 50%;
+  height: 400px;
+  margin: 0 auto;
+  background-color: var(--primary);
+  border-radius: 20px;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 33px;
+  overflow: hidden;
+}
+.second-section .offer-card .left-part {
+  display: flex;
+  flex-direction: column;
+  width: 43%;
+  gap: 10px;
+}
+.offer-card .left-part h6 {
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0px;
+  color: #000000;
+  text-align: left;
+  margin: 0;
+}
+.offer-card .left-part p {
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0px;
+  color: #000000;
+  margin: 0;
+  text-align: left;
+}
+.offer-card .left-part .find-out-btn {
+  margin-top: 10px;
+  width: 80%;
+  background-color: black;
+  padding: 6px 18px;
+  font-size: 21px;
+  line-height: 25px;
+  font-family: "Helvetica Neue";
+  color: var(--primary);
+  border-radius: 18px;
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+.second-section .offer-card .right-img-part {
+  position: absolute;
+  right: -8px;
+  height: 100%;
+}
+.second-section .offer-card .right-img-part img {
+  height: 100%;
+}
+
+@media screen and (max-width: 1660px) {
+  .offers-page .first-section .container .content-first h2 {
+    width: 60%;
+    text-align: center;
+  }
+  .offers-page .offers-tags {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .offers-page .first-section {
+    min-height: unset;
+    max-height: unset;
+  }
+  .offers-page .first-section .container .content-first h2 {
+    width: 70%;
+  }
+  .second-section .offer-card {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .offers-page .first-section .container .content-first h2 {
+    width: 80%;
+    font-size: 80px;
+  }
+  .offers-tags div p {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .second-section .offer-card {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .offers-page .first-section .container .content-first h2 {
+    width: 90%;
+    font-size: 65px;
+    line-height: 72px;
+  }
+  .second-section .offer-card {
+    height: 300px;
+    width: 75%;
+  }
+  .offers-page .first-section,
+  .offers-page .second-section {
+    margin-top: 3rem;
+  }
+  .offers-page .download-app {
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .offers-page .first-section .container .content-first h2 {
+    font-size: 55px;
+    line-height: 62px;
+  }
+  .offers-tags div p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .offers-tags div span {
+    height: 19px;
+  }
+  .second-section .offer-card {
+    height: 280px;
+    width: 85%;
+  }
+  .offer-card .left-part h6 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .offer-card .left-part p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .offer-card .left-part .find-out-btn {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 6px 12px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .second-section .offer-card {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .second-section .offer-card .right-img-part {
+    display: none;
+  }
+  .second-section .offer-card {
+    padding: 33px;
+    height: unset;
+  }
+  .second-section .offer-card .left-part {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .offer-card .left-part p{
+    text-align: center;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .offers-tags div p{
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .offers-page .first-section .container .content-first h2{
+    width: 100%;
+    font-size: 45px;
+    line-height: 50px;
+  }
+}

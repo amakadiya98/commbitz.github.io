@@ -17,7 +17,7 @@
 
 <body>
     <header class="bg-black">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="sticky">
             <div class='container'>
                 <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -154,6 +154,18 @@
     <script src="./assets/Js/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./assets/Js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            var navbar = document.getElementById("sticky");
+            var scrollPosition = window.scrollY;
+
+            if (scrollPosition > 100) {
+                navbar.classList.add('sticky-nav');
+            } else {
+                navbar.classList.remove('sticky-nav');
+            }
+        });
+    </script>
     <script>
         var countries = [
             { name: "United States", flag: "./assets/images/tab-flag/Group 2256.png" },
