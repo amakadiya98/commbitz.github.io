@@ -1,34 +1,464 @@
 .about-us-page .first-section {
-    align-items: flex-start;
-    justify-content: center;
+  align-items: flex-start;
+  justify-content: center;
 }
-
+.about-us-page .first-section img.bg-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.9;
+  z-index: 0;
+}
 .about-us-page .first-section .container .content-first {
-    align-items: center;
-    padding-top: 10%;
-    padding-left: 25%;
+  align-items: center;
+  padding-top: 5%;
+  padding-left: 25%;
 }
 
-.about-us-page .home-section-title{
-    font-size: 100px;
-    line-height: 100px;
-    font-weight: 500;
-    font-family: "Rajdhani";
+.about-us-page .home-section-title {
+  font-size: 100px;
+  line-height: 100px;
+  font-weight: 500;
+  font-family: "Rajdhani";
 }
-.about-us-page .home-section-title span{
-    color: var(--primary);
+.about-us-page .home-section-title span {
+  color: var(--primary);
 }
 .about-us-page .banner-text-block {
-    display: flex;
-    align-items: center;
-    padding: 32px 48px;
-    background-color: var(--primary);
-    color: black;
-    font-size: 24px;
-    line-height: 36px;
-    font-family: "Helvetica Neue";
+  display: flex;
+  align-items: center;
+  padding: 32px 48px;
+  background-color: var(--primary);
+  color: black;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "Helvetica Neue";
+  text-align: left;
+  border-radius: 42px;
+  width: 90%;
+  margin-top: 3rem;
+}
+.about-us-page .second-section {
+  margin: 7rem 0;
+}
+
+.left-cheap-part {
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  background-color: var(--primary);
+  justify-content: center;
+  align-items: center;
+  border-radius: 61px;
+  gap: 20px;
+  max-width: 90%;
+  margin-left: auto;
+}
+.left-cheap-part img {
+  margin: 2rem 0;
+}
+.left-cheap-part h6 {
+  text-align: center;
+  font-family: "Rajdhani";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 55px;
+  letter-spacing: 0px;
+  color: #000000;
+  margin: 0;
+}
+.right-text-part {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 23px;
+  padding: 0 50px;
+  height: 100%;
+}
+.right-text-part h6 {
+  margin: 0;
+  text-align: left;
+  font: normal normal normal 35px/47px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.right-text-part p {
+  margin: 0;
+  text-align: left;
+  font: normal normal normal 24px/28px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #00ff9d;
+}
+
+.about-us-page .values-section {
+  width: 100%;
+  margin: 7.5rem 0;
+}
+
+.values-section .content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: center;
+}
+.about-us-page .section-heading {
+  text-align: center;
+  font: normal normal normal 72px/47px Rajdhani;
+  letter-spacing: 0px;
+  color: #00ff9d;
+}
+.about-us-page .boxes {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  gap: 25px;
+  margin: 5rem 0;
+}
+.about-us-page .value-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex: 1;
+}
+.value-box .top-icon-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  margin: 15px 0;
+}
+.value-box .bottom-text-part {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  font: normal normal normal 24px/28px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin: 0;
+}
+.content .text-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 25px 0;
+  max-width: 85%;
+  margin: 0 auto;
+  font: normal normal normal 35px/47px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #00ff9d;
+  gap: 20px;
+}
+.content .text-content .font-white {
+  color: white;
+}
+.about-us-page .team-section {
+  margin: 7.5rem 0;
+}
+.team-section .team-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.value-box .team-member-name {
+  text-align: center;
+  font: normal normal bold 36px/30px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.value-box .team-member-post {
+  text-align: center;
+  font: normal normal normal 25px/30px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-bottom: 0;
+  margin-top: -10px;
+}
+
+@media screen and (max-width: 1399px) {
+  .about-us-page .home-section-title {
+    font-size: 80px;
+    line-height: 85px;
+  }
+  .left-cheap-part h6 {
+    font-size: 35px;
+    line-height: 42px;
+  }
+  .right-text-part h6,
+  .content .text-content {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .right-text-part p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .about-us-page .section-heading {
+    font-size: 60px;
+  }
+  .about-us-page .boxes {
+    margin: 3rem 0;
+  }
+  .about-us-page .team-section {
+    margin: 6rem 0;
+  }
+  .value-box .team-member-name {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .value-box .team-member-post {
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .value-box .top-icon-part {
+    width: 150px;
+    height: 150px;
+  }
+  .value-box .top-icon-part img {
+    height: 50%;
+  }
+  .value-box .bottom-text-part {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .about-us-page .home-section-title {
+    font-size: 70px;
+    line-height: 75px;
+  }
+  .about-us-page .banner-text-block {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .about-us-page .first-section .container .content-first {
+    padding-top: 10%;
+  }
+  .left-cheap-part h6 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .right-text-part h6,
+  .content .text-content {
+    font-size: 22px;
+    line-height: 34px;
+  }
+  .right-text-part p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .about-us-page .team-section {
+    margin: 1rem;
+  }
+  .about-us-page .download-app {
+    margin-top: 80px;
+  }
+  .about-us-page .team-section .value-box img {
+    width: 80%;
+  }
+  .value-box .team-member-name {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .value-box .team-member-post {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .about-us-page .home-section-title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .about-us-page .banner-text-block {
+    font-size: 16px;
+    line-height: 26px;
+    width: 100%;
+    padding: 24px 36px;
+  }
+  .about-us-page .first-section .container .content-first {
+    padding-top: 20%;
+  }
+  .left-cheap-part {
+    max-width: 100%;
+    padding: 25px;
+  }
+  .left-cheap-part img {
+    width: 50%;
+  }
+  .left-cheap-part h6 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .right-text-part h6,
+  .content .text-content {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .right-text-part {
+    padding: 0 15px;
+  }
+  .right-text-part p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .about-us-page .boxes {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .value-box .top-icon-part {
+    width: 100px;
+    height: 100px;
+  }
+  .value-box .bottom-text-part {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .content .text-content {
+    padding: 0;
+  }
+  .about-us-page .values-section {
+    margin: 5rem 0;
+  }
+  .about-us-page .section-heading {
+    font-size: 45px;
+  }
+  .value-box .team-member-name {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .value-box .team-member-post {
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: -15px;
+  }
+  .about-us-page footer .right-part .upper-side .end-side .submit-btn {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-us-page .first-section .container .content-first {
+    padding-left: 0;
+  }
+  .about-us-page .first-section {
+    height: 50vh;
+  }
+  .about-us-page .first-section .container .content-first {
+    padding-left: 5%;
+    padding-top: 15%;
+  }
+  .about-us-page .first-section img.bg-img {
+    height: 70%;
+  }
+  .about-us-page .home-section-title {
+    font-size: 35px;
+    line-height: 45px;
     text-align: left;
-    border-radius: 42px;
-    width: 90%;
+    width: 100%;
+  }
+  .about-us-page .banner-text-block{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .about-us-page .second-section{
+    margin-top: -7rem;
+    position: relative;
+    z-index: 5;
+  }
+  .right-text-part{
     margin-top: 2.5rem;
+    padding: 0;
+  }
+  .right-text-part h6, .right-text-part p{
+    text-align: center;
+    gap: 15px;
+  }
+  .about-us-page .boxes{
+    gap: 50px;
+    justify-content: center;
+  }
+  .about-us-page .value-box{
+    flex: 0;
+  }
+  .content .text-content{
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .content .text-content p {
+    margin: 0;
+  }
+  .about-us-page .team-section .value-box {
+    width: 50%;
+  }
+  .about-us-page .team-section .value-box img{
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .left-cheap-part{
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  .values-section .boxes {
+    max-width: 85%;
+    margin: 3rem auto;
+  }
+  .values-section .value-box .top-icon-part {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-us-page .second-section{
+    margin-top: 3rem;
+  }
+  .about-us-page .first-section img.bg-img{
+    height: 100%;
+    object-position: left;
+    opacity: 0.5;
+  }
+  .about-us-page .first-section .container .content-first{
+    padding-left: 0;
+    padding-top: 10%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-us-page .first-section{
+    height: 65vh;
+  }
+  .about-us-page .team-section .value-box{
+    width: 80%;
+  }
+  .left-cheap-part{
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .about-us-page .home-section-title{
+    font-size: 28px;
+    line-height: 35px;
+  }
 }

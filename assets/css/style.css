@@ -1026,6 +1026,37 @@ li a.dropdown-item {
 }
 
 /* select 2 css for select country dropdown end */
+/* selct flag part */
+.selected-flag .select2-container{
+  width: auto !important;
+}
+.selected-flag .select2-container--default .select2-selection--single{
+  width: auto;
+  background-color: transparent;
+}
+.selected-flag .select2-container--default .select2-selection--single .select2-selection__rendered {
+  margin-right: 0px;
+}
+.selected-flag .select2-container--default .select2-selection--single .select2-selection__arrow {
+  display: flex;
+}
+.selected-flag .select2-container--default .select2-selection--single::after{
+  display: none;
+}
+.selected-flag .select2-flag{
+  width: 40px;
+}
+.selected-flag .select2-flag  .select2-container--default .select2-selection--single{
+  height: 35px;
+}
+.selected-flag .select2-container--default .select2-selection--single .select2-selection__arrow b{
+  border-color: #fff transparent transparent transparent !important;
+  margin-left: 4px;
+}
+.selected-flag .select2-container--default .select2-selection--single{
+  height: 30px;
+  padding: 0;
+}
 .navbar .dropdown-menu {
   min-width: auto;
 }
@@ -2462,6 +2493,7 @@ textarea:focus {
   .first-section .container .content-first {
     align-items: normal;
   }
+ 
   .first-section .input-box .search-btn img {
     width: 60%;
   }
@@ -2521,6 +2553,10 @@ textarea:focus {
   .footer-container {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  footer .right-part .upper-side .d-flex{
+    flex-wrap: wrap;
+    gap: 15px;
   }
 }
 @media screen and (max-width: 375px) {
