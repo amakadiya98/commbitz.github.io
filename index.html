@@ -1926,12 +1926,12 @@
 
         $(document).ready(function () {
             $('#countryFlag').select2({
-                templateResult: formatOption,
-                templateSelection: formatOption
+                templateResult: formatOptionflag,
+                templateSelection: formatOptionflag
             });
         });
 
-        function formatOption(option) {
+        function formatOptionflag(option) {
             if (!option.id) {
                 return option.text;
             }
