@@ -1,0 +1,364 @@
+.login-content-part.order-summary-page{
+    max-width: 50%;
+}
+.login-content-part.order-summary-page .main-form-part{
+    padding: 50px 52px;
+}
+.order-summary-page .main-form-part .close-modal-btn{
+    right: 20px;
+    top: 20px;
+}
+.order-summary-data h4{
+    font-size: 35px;
+    line-height: 47px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Helvetica Neue';
+}
+.order-summary-content{
+    margin-top: 60px;
+}
+.order-summary-space{
+    --bs-gutter-x: 4rem;
+}
+.sim-card-img img{
+    width: 100%;
+}
+.inc-dec-btn-part{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.inc-dec-btn-part .inc-dec-btn{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 0;
+}
+.inc-dec-btn-part .inc-dec-no{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 0;
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+    margin: 0 30px;
+}
+.inc-dec-btn-part .inc-dec-no::placeholder{
+    font-size: 30px;
+    color: #000;
+}
+.star-part{
+    display: flex;
+    margin-top: 20px;
+}
+.star-part img{
+    filter: invert(1);
+    width: 20px;
+    margin-left: 4px;
+}
+.vat-price-part{
+    margin-top: 46px;
+}
+.vat-price-part .vat-filed{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.vat-price-part .vat-filed h6{
+    font-size: 36px;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-family: 'Helvetica Neue';
+    flex: 2;
+}
+.vat-price-part .vat-filed p{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 0;
+    font-family: 'Helvetica Neue';
+    flex: 1;
+}
+.order-summary-data .button-part{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.order-summary-data .button-part button{
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    font-family: 'Helvetica Neue';
+    background-color: #00FF9D;
+    border-radius: 24px;
+    border: 0;
+    min-width: 146px;
+    padding: 6px 10px;
+}
+.buy-now-btn{
+    margin-right: 18px
+}
+.payment-option{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.payment-option .payment-button{
+    background-color: transparent;
+    border: 0;
+    position: relative;
+}
+.payment-option .payment-button::after{
+    position: absolute;
+    content: "";
+    background-color: #00FF9D;
+    width: 1px;
+    height: 60px;
+    top: -2px;
+    right: -34px;
+}
+.payment-option .payment-button:last-child::after{
+    display: none;
+}
+.promo-code-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.promo-code-part .promo-input{
+    border: 1px solid #00CAF9;
+    height: 40px;
+    width: 216px;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+.promo-code-part .apply-btn{
+    background-color: #00FF9D;
+    border-radius: 23px;
+    padding: 4px 40px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    font-family: 'Helvetica Neue';
+    border: 0;
+}
+.promo-heading{
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Helvetica Neue';
+}
+.promo-code-part .see-less p{
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Helvetica Neue';
+    margin-bottom: 0;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    padding-right: 38px;
+}
+.promo-code-part .see-less p::after{
+    content: "";
+    position: absolute;
+    background-image: url('../images/down.svg');
+    height: 26px;
+    width: 20px;
+    filter: invert(1);
+    background-repeat: no-repeat;
+    right: 0px;
+    top: 8px;
+}
+.promo-code-part .see-less p.collapsed::after{
+    transform: rotate(180deg);
+    top: 4px;
+}
+.submit-btn{
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    font-family: 'Helvetica Neue';
+    background-color: #00FF9D;
+    border: 0;
+    border-radius: 23px;
+    padding: 4px 34px;
+    text-align: center;
+}
+
+.clickable-block .accordion-body {
+    border: 1px solid #00CAF9;
+    border-radius: 12px;
+    background-color: #666666;
+    padding: 10px 26px 26px;
+    margin-top: 24px;
+}
+.clickable-block .accordion-body .filed{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #FFFFFF;
+    margin-top: 20px;
+}
+.clickable-block .accordion-body .filed:last-child{
+    border-bottom: 0;
+}
+.clickable-block .accordion-body .filed .bank-data h6{
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Helvetica Neue';
+}
+.clickable-block .accordion-body .filed .bank-data{
+    max-width: 60%;
+}
+.clickable-block .accordion-body .filed .bank-data p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Helvetica Neue';
+    margin-bottom: 0;
+   
+    line-height: 30px;
+}
+.clickable-block .accordion-body .filed .bank-data a{
+    text-decoration: none;
+    color: #00CAF9;
+    display: inline-block;
+    margin-top: 8px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.clickable-block .btn-apply-text{
+    background-color: transparent;
+    border: 0;
+    font-size: 28px;
+    font-weight: 500;
+    color: #00FF9D;
+}
+/* data-card */
+.main-card-data-info .buy-data-card {
+    margin-top: 40px;
+  }
+  .main-card-data-info .buy-data-card .field {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 14px;
+  }
+  .main-card-data-info .buy-data-card .field p {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: "Helvetica Neue";
+    color: #fff;
+    margin-bottom: 4px;
+  }
+  .main-card-data-info .buy-data-card .field i {
+    margin-right: 10px;
+  }
+  .main-card-data-info .buy-data-card .field i.rotate-icon {
+    transform: rotate(90deg);
+  }
+  .main-card-data-info .buy-data-card .field .icon {
+    flex: 1;
+  }
+  .main-card-data-info .buy-data-card .field p.right-part {
+    flex: 1;
+    text-align: left;
+  }
+
+
+  /* radio btn part */
+.radio-btn-text-part{
+    margin-top: 40px;
+}
+.radio-btn-text-part ul{
+    padding: 0;
+}
+li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+label:has(input[type='radio']) {
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Helvetica Neue';
+}
+label:has(input[type='radio']) self:not( & ~ &) {
+    margin-block-start: 1em;
+}
+label:has(input[type='radio']) > input[type='radio'] {
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #49454e;
+    border-radius: 50%;
+    transform: translateY(10px);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+label:has(input[type='radio']) > input[type='radio']::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #fff;
+    background-color: CanvasText;
+}
+label:has(input[type='radio']) > input[type='radio']::after {
+    content: "";
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #1c1b1f;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%);
+}
+label:has(input[type='radio']) > input[type='radio']:hover:not(:disabled)::after {
+    opacity: 0.08;
+}
+label:has(input[type='radio']) > input[type='radio']:active:not(:disabled)::after {
+    opacity: 0.12;
+}
+label:has(input[type='radio']) > input[type='radio']:is(:active):not(:checked)::after {
+    background-color:#fff;
+}
+label:has(input[type='radio']) > input[type='radio']:checked {
+    border-color: #fff;
+}
+label:has(input[type='radio']) > input[type='radio']:checked::after {
+    opacity: 0;
+}
+label:has(input[type='radio']) > input[type='radio']:checked::before {
+    transform: scale(1);
+}
+label:has(input[type='radio']) > input[type='radio']:checked self:is(:hover,:focus)::after {
+    background-color: #fff;
+}
+label:has(input[type='radio']) > input[type='radio']:checked:is(:active)::after {
+    background-color: #1c1b1f;
+}
+label:has(input[type='radio']) > input[type='radio']:focus {
+    outline: unset;
+}
+label:has(input[type='radio']) > input[type='radio']:focus::after {
+    opacity: 0.12;
+}

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
+    <link rel="stylesheet" href="./assets/css/order_summary_page.css" />
+</head>
+
+<body>
+    <header class="bg-black">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="sticky">
+            <div class='container'>
+                <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="links-list d-flex align-items-center gap-3 text-light ps-0 ms-auto">
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn no-bg-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src='./assets/images/Group 1526.png' alt='flag'>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#"><img
+                                                src='./assets/images/tab-flag/Group 2263.png' alt='country' /></a></li>
+                                    <li><a class="dropdown-item" href="#"><img
+                                                src='./assets/images/tab-flag/Group 2259.png' alt='country' /></a></li>
+                                    <li><a class="dropdown-item" href="#"><img
+                                                src='./assets/images/tab-flag/Group 2261.png' alt='country' /></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn no-bg-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    INR
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">USD</a></li>
+                                    <li><a class="dropdown-item" href="#">EURO</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href='#'>Go To App</a></li>
+                        <li><a href='./login.html'>Sign-Up</a></li>
+                        <li><a href="./login.html" class="login-btn rounded-pill px-4 py-1">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="login-content-part order-summary-page">
+        <div class="container">
+            <div class="main-form-part">
+                <button class="close-modal-btn">
+                    <img src="./assets/images/close-modal.svg" alt="close" />
+                </button>
+                <div class="order-summary-data">
+                    <h4>Order Summary</h4>
+                    <div class="order-summary-content">
+                        <div class="row order-summary-space">
+                            <div class="col-lg-7 col-md-12">
+                                <select class="country-drop-btn custom-select" id="model-dropdown">
+                                    <option value="" selected disabled>USA - $124 (7 Days - 15GB)</option>
+                                </select>
+                                <div class="main-card-data-info">
+                                    <div class="buy-data-card">
+                                        <div class="field">
+                                            <div class="icon">
+                                                <p> <i class="fa-solid fa-right-left rotate-icon field-icon"></i>Data
+                                                </p>
+                                            </div>
+                                            <p class="right-part">1 GB</p>
+                                        </div>
+                                        <div class="field">
+                                            <div class="icon">
+                                                <p> <i class="fa-solid fa-calendar field-icon"></i>Validity</p>
+                                            </div>
+                                            <p class="right-part">7 Days</p>
+                                        </div>
+                                        <div class="field">
+                                            <div class="icon">
+                                                <p> <i class="fa-regular fa-comment"></i>SMS</p>
+                                            </div>
+                                            <p class="right-part">Local Unlimited</p>
+                                        </div>
+                                        <div class="field">
+                                            <div class="icon">
+                                                <p> <i class="fa-solid fa-phone field-icon"></i>Incoming </p>
+                                            </div>
+                                            <p class="right-part">Free</p>
+                                        </div>
+                                        <div class="field">
+                                            <div class="icon">
+                                                <p> <i class="fa-solid fa-phone-volume field-icon"></i>Outgoing</p>
+                                            </div>
+                                            <p class="right-part">100 mins | 500 mins Local | International</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-12">
+                                <div class="sim-card-data">
+                                    <div class="sim-card-img">
+                                        <img src="./assets/images/sim-card.png" alt="card" />
+                                    </div>
+                                    <div class="inc-dec-btn-part">
+                                        <button class="inc-dec-btn"><i class="fa-solid fa-minus"></i></button>
+                                        <input type="text" class="inc-dec-no" placeholder="1" />
+                                        <button class="inc-dec-btn"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                    <div class="star-part">
+                                        <img src="./assets/images/star-fill.png" />
+                                        <img src="./assets/images/star-fill.png" />
+                                        <img src="./assets/images/star-fill.png" />
+                                        <img src="./assets/images/star-fill.png" />
+                                        <img src="./assets/images/star.png" />
+                                    </div>
+                                    <div class="vat-price-part">
+                                        <div class="vat-filed">
+                                            <h6>VAT</h6>
+                                            <p>$ 0.00</p>
+                                        </div>
+                                        <div class="vat-filed">
+                                            <h6>Total Price:</h6>
+                                            <p>$ 124</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-part">
+                            <button class="buy-now-btn">Buy Now</button>
+                            <button class="sign-up">Sign-up</button>
+                        </div>
+                    </div>
+                    <h4>Choose Your Payment Option</h4>
+                    <div class="payment-option">
+                        <button class="payment-button">
+                            <img src="./assets/images/apple-pay.png" alt="apple-pay" />
+                        </button>
+                        <button class="payment-button">
+                            <img src="./assets/images/g-pay.png" alt="google-pay" />
+                        </button>
+                        <button class="payment-button">
+                            <img src="./assets/images/visa.png" alt="google-pay" />
+                        </button>
+                        <button class="payment-button">
+                            <img src="./assets/images/card.png" alt="google-pay" />
+                        </button>
+                    </div>
+                    <h6 class="promo-heading">Promo Code</h6>
+                    <div class="promo-code-part">
+                        <div class="promo-part">
+                            <input class="promo-input" placeholder="" />
+                            <button class="apply-btn">Apply</button>
+                        </div>
+                        <div class="see-less accordion" id="accordionExample">
+                            <p type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">See Less</p>
+                            
+                        </div>
+                    </div>
+                    <div class="clickable-block">
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="filed">
+                                    <div class="bank-data">
+                                        <h6>ICICICC</h6>
+                                        <p>Flat 12% off on Flights with ICICI Bank Credit Cards</p>
+                                        <a href="#">Know More</a>
+                                    </div>
+                                    <div class="bank-link">
+                                        <button class="btn-apply-text">Apply</button>
+                                    </div>
+                                </div>
+                                <div class="filed">
+                                    <div class="bank-data">
+                                        <h6>CTDOM</h6>
+                                        <p>Get up to Rs. 5,000/- off</p>
+                                        <a href="#">Know More</a>
+                                    </div>
+                                    <div class="bank-link">
+                                        <button class="btn-apply-text">Apply</button>
+                                    </div>
+                                </div>
+                                <div class="filed">
+                                    <div class="bank-data">
+                                        <h6>ICICICC</h6>
+                                        <p>Flat 12% off on Flights with ICICI Bank Credit Cards</p>
+                                        <a href="#">Know More</a>
+                                    </div>
+                                    <div class="bank-link">
+                                        <button class="btn-apply-text">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                   
+
+
+
+
+
+
+                    <div class="radio-btn-text-part">
+                        <ul>
+                            <li>
+                              <label for="radio1"
+                                ><input
+                                  id="radio1"
+                                  name="radio"
+                                  type="radio"
+                                  class="radio"
+                                  checked="checked"
+                                />
+                                 I agree to COMMBITZ terms and conditions privacy policy</label
+                              >
+                            </li>
+                            <li>
+                              <label for="radio2"
+                                ><input
+                                  id="radio2"
+                                  name="radio"
+                                  type="radio"
+                                  class="radio"
+                                />I would like to get frequent updates from COMMBITZ</label
+                              >
+                            </li>
+                          </ul>
+                    </div>
+                    <div class="page-end-btn d-flex justify-content-center mt-5">
+                        <button class="submit-btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/Js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="./assets/Js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            var navbar = document.getElementById("sticky");
+            var scrollPosition = window.scrollY;
+
+            if (scrollPosition > 100) {
+                navbar.classList.add('sticky-nav');
+            } else {
+                navbar.classList.remove('sticky-nav');
+            }
+        });
+    </script>
+
+    <script>
+        var countries = [
+            { name: "United States", flag: "./assets/images/tab-flag/Group 2256.png" },
+            { name: "China", flag: "./assets/images/tab-flag/Group 2267.png" },
+            { name: "India", flag: "./assets/images/tab-flag/Group 2253.png" },
+            { name: "Fuji", flag: "./assets/images/tab-flag/Group 1889.png" }
+        ];
+
+        function populateDropdown() {
+            var dropdown = document.getElementById("country-dropdown");
+
+            countries.forEach(function (country) {
+                var option = document.createElement("option");
+                option.value = country.name.toLowerCase();
+                option.text = country.name;
+                option.dataset.image = country.flag;
+                dropdown.appendChild(option);
+            });
+        }
+
+        window.addEventListener("load", populateDropdown);
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#country-dropdown').select2({
+                templateResult: formatOption2
+            });
+            $('#model-dropdown').select2({
+                templateResult: formatOption2
+            });
+        });
+
+        function formatOption2(option) {
+            if (!option.id) {
+                return option.text;
+            }
+
+            var $option = $('<span>' + option.text + '</span>');
+            return $option;
+        }
+    </script>
+    <script>
+        var models = [
+            { name: "USA - $124 (7 Days - 15GB)" },
+            { name: "USA - $198 (7 Days - 20GB)" },
+            { name: "USA - $224 (15 Days - 25GB)" },
+        ];
+
+
+        function populateDropdown(dropdownId, optionsArray) {
+            var dropdown = document.getElementById(dropdownId);
+
+            optionsArray.forEach(function (option) {
+                var optionElement = new Option(option.name, option.name);
+                dropdown.appendChild(optionElement);
+            });
+        }
+
+        window.addEventListener("load", function () {
+            populateDropdown("model-dropdown", models);
+
+            $('#model-dropdown').select2({ templateResult: formatOptionWithOutImg });
+        });
+
+        function formatOptionWithOutImg(option) {
+            if (!option.id) {
+                return option.text;
+            }
+
+            var $option = $('<span>' + option.text + '</span>');
+            return $option;
+        }
+    </script>
+</body>
+
+</html>
