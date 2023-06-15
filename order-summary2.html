@@ -30,21 +30,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="links-list d-flex align-items-center gap-3 text-light ps-0 ms-auto">
-                        <li>
-                            <div class="dropdown">
-                                <button class="btn no-bg-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src='./assets/images/Group 1526.png' alt='flag'>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#"><img
-                                                src='./assets/images/tab-flag/Group 2263.png' alt='country' /></a></li>
-                                    <li><a class="dropdown-item" href="#"><img
-                                                src='./assets/images/tab-flag/Group 2259.png' alt='country' /></a></li>
-                                    <li><a class="dropdown-item" href="#"><img
-                                                src='./assets/images/tab-flag/Group 2261.png' alt='country' /></a></li>
-                                </ul>
-                            </div>
+                        <li class="selected-flag">
+                            <select id="countryFlag">
+                            </select>
                         </li>
                         <li>
                             <div class="dropdown">
@@ -58,13 +46,40 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href='#'>Go To App</a></li>
+                        
+                        <li><a href='./program-error.html'>Go To App</a></li>
                         <li><a href='./login.html'>Sign-Up</a></li>
                         <li><a href="./login.html" class="login-btn rounded-pill px-4 py-1">Login</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <div class="container d-flex justify-content-center mt-3 second-header">
+            <nav class="navbar">
+                <ul class="navbar-nav header-link-list d-flex gap-3 text-light ps-0 flex-wrap ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./book_attractions.html">Book Attractions<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./program-error.html">Banking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./partners.html">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./offers.html">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./program-error.html">Reach Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <section class="login-content-part order-summary-page">
         <div class="container">
@@ -180,36 +195,7 @@
                     <div class="clickable-block">
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <!-- <div class="filed">
-                                    <div class="bank-data">
-                                        <h6>ICICICC</h6>
-                                        <p>Flat 12% off on Flights with ICICI Bank Credit Cards</p>
-                                        <a href="#">Know More</a>
-                                    </div>
-                                    <div class="bank-link">
-                                        <button class="btn-apply-text">Apply</button>
-                                    </div>
-                                </div>
-                                <div class="filed">
-                                    <div class="bank-data">
-                                        <h6>CTDOM</h6>
-                                        <p>Get up to Rs. 5,000/- off</p>
-                                        <a href="#">Know More</a>
-                                    </div>
-                                    <div class="bank-link">
-                                        <button class="btn-apply-text">Apply</button>
-                                    </div>
-                                </div>
-                                <div class="filed">
-                                    <div class="bank-data">
-                                        <h6>ICICICC</h6>
-                                        <p>Flat 12% off on Flights with ICICI Bank Credit Cards</p>
-                                        <a href="#">Know More</a>
-                                    </div>
-                                    <div class="bank-link">
-                                        <button class="btn-apply-text">Apply</button>
-                                    </div>
-                                </div> -->
+                                
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="field-data mt-3">
@@ -224,14 +210,35 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="dropdown custom-drop-down">
-                                            <select class="country-drop-btn custom-select" id="model-dropdown">
-                                                <option value="" selected disabled>Select Model</option>
-                                            </select>
+                                        <div class="field-data mt-3">
+                                            <p style="color: #fff;">Frequent Flyer No.</p>
+                                            <div class="dropdown custom-drop-down">
+                                                <select class="country-drop-btn custom-select" id="model-dropdown2">
+                                                    <option value="" selected disabled>Select the Airlines</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6"></div>
-                                    <div class="col-md-6"></div>
+                                    <div class="col-md-6">
+                                        <div class="field-data mt-3">
+                                            <p style="color: #fff;">Offers</p>
+                                            <div class="dropdown custom-drop-down">
+                                                <select class="country-drop-btn custom-select" id="model-dropdown3">
+                                                    <option value="" selected disabled>Select for Offers</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="field-data mt-3">
+                                            <p style="color: #fff;">Loyalty Program</p>
+                                            <div class="dropdown custom-drop-down">
+                                                <select class="country-drop-btn custom-select" id="model-dropdown4">
+                                                    <option value="" selected disabled>Select Loyalty</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -309,10 +316,13 @@
     </script>
     <script>
         $(document).ready(function () {
-            $('#country-dropdown').select2({
+            $('#model-dropdown').select2({
                 templateResult: formatOption2
             });
-            $('#model-dropdown').select2({
+            $('#model-dropdown2').select2({
+                templateResult: formatOption2
+            });
+            $('#model-dropdown3').select2({
                 templateResult: formatOption2
             });
         });
@@ -333,6 +343,24 @@
             { name: "USA - $224 (15 Days - 25GB)" },
         ];
 
+        var models2 = [
+            { name: "Airlines 1" },
+            { name: "Airlines 2" },
+            { name: "Airlines 3" },
+        ];
+
+        var models3 = [
+            { name: "Offer 1" },
+            { name: "Offer 2" },
+            { name: "Offer 3" },
+        ];
+
+        var models4 = [
+            { name: "Loyalty 1" },
+            { name: "Loyalty 2" },
+            { name: "Loyalty 3" },
+        ];
+
 
         function populateDropdown(dropdownId, optionsArray) {
             var dropdown = document.getElementById(dropdownId);
@@ -345,8 +373,13 @@
 
         window.addEventListener("load", function () {
             populateDropdown("model-dropdown", models);
-
+            populateDropdown("model-dropdown2", models2);
+            populateDropdown("model-dropdown3", models3);
+            populateDropdown("model-dropdown4", models4);
             $('#model-dropdown').select2({ templateResult: formatOptionWithOutImg });
+            $('#model-dropdown2').select2({ templateResult: formatOptionWithOutImg });
+            $('#model-dropdown3').select2({ templateResult: formatOptionWithOutImg });
+            $('#model-dropdown4').select2({ templateResult: formatOptionWithOutImg });
         });
 
         function formatOptionWithOutImg(option) {
@@ -358,6 +391,8 @@
             return $option;
         }
     </script>
+
+    
 </body>
 
 </html>

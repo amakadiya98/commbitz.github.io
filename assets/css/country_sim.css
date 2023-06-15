@@ -60,7 +60,7 @@
   font-weight: 500;
 }
 .main-v-tab-content-part {
-  max-width: 80%;
+  max-width: 85%;
   margin: auto;
   height: 100%;
 }
@@ -283,6 +283,9 @@
   justify-content: flex-start;
   flex-direction: column;
 }
+.sim-block {
+  margin-top: 2rem;
+}
 .wallet-tab-block .wallet-tab-heading,
 .sim-tab-block .sim-tab-heading {
   text-align: left;
@@ -362,7 +365,35 @@
   margin-top: 20px;
   font-size: 14px;
 }
+.vat-price-part {
+  margin-top: 27px;
+}
+.transction-data {
+  display: flex;
+  align-items: center;
+}
+.transction-data p {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  color: white;
+}
+.order-summary-space {
+  --bs-gutter-x: 2rem;
+}
+.vat-price-part .vat-filed h6 {
+  font-size: 30px;
+}
+.vat-price-part .vat-filed p {
+  font-size: 30px;
+}
+.main-card-data-info .buy-data-card {
+  margin-top: 0;
+}
 @media screen and (max-width: 1440px) {
+  .login-content-part.coutry_sim_page {
+    max-width: 80%;
+  }
   .login-content-part.coutry_sim_page .main-form-part {
     padding: 60px 80px;
   }
@@ -374,6 +405,15 @@
   }
   .de-active-btn {
     font-size: 12px;
+  }
+  .transction-data p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .vat-price-part .vat-filed h6,
+  .vat-price-part .vat-filed p {
+    font-size: 24px;
   }
 }
 
@@ -415,9 +455,15 @@
     font-size: 18px;
     line-height: 23px;
   }
+  .sim-card-img {
+    margin-top: 2rem;
+  }
+  .sim-card-img img {
+    width: 50%;
+  }
 }
-@media screen and (max-width: 1024px){
-  .login-content-part.coutry_sim_page{
+@media screen and (max-width: 1024px) {
+  .login-content-part.coutry_sim_page {
     max-width: 90%;
   }
 }
@@ -445,7 +491,6 @@
   .wallet-tab-block .balance-part {
     gap: 15px;
   }
-  
 }
 
 @media screen and (max-width: 767px) {
@@ -462,6 +507,19 @@
   }
   .checkbox-with-text {
     margin-bottom: 0;
+  }
+  .main-card-data-info .buy-data-card .field p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .vat-price-part .vat-filed h6,
+  .vat-price-part .vat-filed p {
+    font-size: 18px;
+  }
+  .wallet-tab-block .wallet-tab-heading,
+  .sim-tab-block .sim-tab-heading {
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 
@@ -516,16 +574,16 @@
     font-size: 14px;
     line-height: 19px;
   }
-  .verticale-tab-content-part{
+  .verticale-tab-content-part {
     margin: 20px 0;
   }
-  .login-content-part.coutry_sim_page .main-v-tab-content-part{
+  .login-content-part.coutry_sim_page .main-v-tab-content-part {
     margin-top: 30px;
   }
-  .image-slide{
+  .image-slide {
     margin-top: 50px;
   }
-  .step{
+  .step {
     margin-bottom: 20px;
     font-size: 20px;
   }
@@ -545,6 +603,9 @@
   }
   .login-content-part.coutry_sim_page .main-form-part .close-modal-btn {
     display: none;
+  }
+  .sim-card-img img {
+    width: 80%;
   }
 }
 

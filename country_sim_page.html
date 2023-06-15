@@ -15,12 +15,13 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/login.css" />
+    <link rel="stylesheet" href="./assets/css/order_summary_page.css" />
     <link rel="stylesheet" href="./assets/css/country_sim.css">
 </head>
 
 <body>
     <header class="bg-black">
-        <nav class="navbar navbar-expand-lg navbar-dark" id="sticly">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="sticky">
             <div class='container'>
                 <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -30,21 +31,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="links-list d-flex align-items-center gap-3 text-light ps-0 ms-auto">
-                        <li>
-                            <div class="dropdown">
-                                <button class="btn no-bg-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src='./assets/images/Group 1526.png' alt='flag'>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#"><img
-                                                src='./assets/images/tab-flag/Group 2263.png' alt='country' /></a></li>
-                                    <li><a class="dropdown-item" href="#"><img
-                                                src='./assets/images/tab-flag/Group 2259.png' alt='country' /></a></li>
-                                    <li><a class="dropdown-item" href="#"><img
-                                                src='./assets/images/tab-flag/Group 2261.png' alt='country' /></a></li>
-                                </ul>
-                            </div>
+                        <li class="selected-flag">
+                            <select id="countryFlag">
+                            </select>
                         </li>
                         <li>
                             <div class="dropdown">
@@ -58,13 +47,40 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href='#'>Go To App</a></li>
+                        
+                        <li><a href='./program-error.html'>Go To App</a></li>
                         <li><a href='./login.html'>Sign-Up</a></li>
                         <li><a href="./login.html" class="login-btn rounded-pill px-4 py-1">Login</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <div class="container d-flex justify-content-center mt-3 second-header">
+            <nav class="navbar">
+                <ul class="navbar-nav header-link-list d-flex gap-3 text-light ps-0 flex-wrap ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./book_attractions.html">Book Attractions<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./program-error.html">Banking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./partners.html">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./offers.html">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./program-error.html">Reach Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <section class="login-content-part coutry_sim_page">
         <div class="container">
@@ -189,7 +205,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-5">
-                                                    <button class="common-btn">Save Changes</button>
+                                                    <button class="common-btn" onclick = "window.location.href='./refer_earn.html';">Save Changes</button>
                                                     <button class="de-active-btn">De-activate Temporarily</button>
                                                 </div>
                                                 <div class="col-md-7">
@@ -220,8 +236,90 @@
                                         aria-labelledby="v-pills-sim-tab">
                                         <div class='sim-tab-block'>
                                             <div class='sim-content'>
-                                                <h6 class="sim-tab-heading">No SIM yet...</h6>
-                                                <div class='sim-block'></div>
+                                                <h6 class="sim-tab-heading">Order Confirmation</h6>
+                                                <div class='sim-block'>
+                                                    <div class="row order-summary-space">
+                                                        <div class="col-xl-7 col-lg-12">
+                                                            <div class="main-card-data-info">
+                                                                <div class="buy-data-card">
+                                                                    <div class="field">
+                                                                        <div class="icon">
+                                                                            <p> <i
+                                                                                    class="fa-solid fa-right-left rotate-icon field-icon"></i>Data
+                                                                            </p>
+                                                                        </div>
+                                                                        <p class="right-part">1 GB</p>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <div class="icon">
+                                                                            <p> <i
+                                                                                    class="fa-solid fa-calendar field-icon"></i>Validity
+                                                                            </p>
+                                                                        </div>
+                                                                        <p class="right-part">7 Days</p>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <div class="icon">
+                                                                            <p> <i class="fa-regular fa-comment"></i>SMS
+                                                                            </p>
+                                                                        </div>
+                                                                        <p class="right-part">Local Unlimited</p>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <div class="icon">
+                                                                            <p> <i
+                                                                                    class="fa-solid fa-phone field-icon"></i>Incoming
+                                                                            </p>
+                                                                        </div>
+                                                                        <p class="right-part">Free</p>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <div class="icon">
+                                                                            <p> <i
+                                                                                    class="fa-solid fa-phone-volume field-icon"></i>Outgoing
+                                                                            </p>
+                                                                        </div>
+                                                                        <p class="right-part">100 mins | 500 mins
+                                                                            Local | International</p>
+                                                                    </div>
+                                                                    <div class="vat-price-part">
+                                                                        <div class="transction-data">
+                                                                            <p>Transcation Number:</p>
+                                                                            <p class='ms-2'>XX XX XXX</p>
+                                                                        </div>
+                                                                        <div class="transction-data mt-3">
+                                                                            <p>Date of purchase:</p>
+                                                                            <p class='ms-2'>XX XX XXX</p>
+                                                                        </div>
+                                                                        <div class="vat-filed mt-3"> 
+                                                                            <h6>VAT</h6>
+                                                                            <p>$ 0.00</p>
+                                                                        </div>
+                                                                        <div class="vat-filed mt-3">
+                                                                            <h6>Total Price:</h6>
+                                                                            <p>$ 124</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-5 col-lg-12">
+                                                            <div class="sim-card-data">
+                                                                <div class="sim-card-img">
+                                                                    <img src="./assets/images/sim-card.png"
+                                                                        alt="card" />
+                                                                </div>
+                                                                <div class="star-part">
+                                                                    <img src="./assets/images/star-fill.png" />
+                                                                    <img src="./assets/images/star-fill.png" />
+                                                                    <img src="./assets/images/star-fill.png" />
+                                                                    <img src="./assets/images/star-fill.png" />
+                                                                    <img src="./assets/images/star.png" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
