@@ -16,7 +16,7 @@
 .about-us-page .first-section .container .content-first {
   align-items: center;
   padding-top: 5%;
-  padding-left: 25%;
+  padding-left: 16%;
 }
 
 .about-us-page .home-section-title {
@@ -55,7 +55,6 @@
   align-items: center;
   border-radius: 61px;
   gap: 20px;
-  max-width: 90%;
   margin-left: auto;
 }
 .left-cheap-part img {
@@ -115,10 +114,11 @@
 .about-us-page .boxes {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   gap: 25px;
   margin: 5rem 0;
+  flex-wrap: wrap;
 }
 .about-us-page .value-box {
   display: flex;
@@ -126,7 +126,7 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  flex: 1;
+  width: 30%;
 }
 .value-box .top-icon-part {
   display: flex;
@@ -397,7 +397,7 @@
     justify-content: center;
   }
   .about-us-page .value-box{
-    flex: 0;
+    width: 100%;
   }
   .content .text-content{
     font-size: 14px;

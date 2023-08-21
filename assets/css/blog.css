@@ -39,8 +39,8 @@
 }
 .blogs-page .blog-text.collapsed {
   display: -webkit-box;
-  width: 500px;
-  max-width: 500px;
+  width: 600px;
+  max-width: 600px;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -154,6 +154,7 @@
 .article-part .left-part {
   display: flex;
   flex: 1 1 auto;
+  padding-right: 50px;
 }
 .article-part .left-part .row {
   width: 103%;
@@ -321,6 +322,9 @@
   }
   .download-app {
     margin-top: 100px;
+  }
+  .article-part .left-part{
+    padding-right: 0;
   }
 }
 

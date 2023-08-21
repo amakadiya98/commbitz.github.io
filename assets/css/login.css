@@ -6,7 +6,11 @@
 }
 .login-content-part {
   margin: 60px auto;
-  max-width: 60%;
+  /* max-width: 60%; */
+  max-width: 1050px;
+}
+.login-content-part.travel-information {
+  max-width: 1200px;
 }
 .main-form-part {
   border: 2px solid var(--primary);
@@ -14,6 +18,7 @@
   padding: 80px 100px;
   position: relative;
 }
+
 .travel-information .main-form-part {
   padding: 60px;
 }
@@ -317,16 +322,20 @@ button:hover {
 
 /* user Information */
 .login-content-part.user-information {
-  max-width: 50%;
+  max-width: 890px;
 }
 .login-content-part.user-information .main-form-part {
   padding: 60px 40px 30px;
 }
 /* product information */
 .login-content-part.product-information {
-  max-width: 50%;
+  max-width: 1050px;
 }
 
+.product-information .travel-information-content-part {
+  max-width: 670px;
+  margin: 0 auto;
+}
 /* choose currency page && suggested language page */
 
 .login-content-part.currency-information,

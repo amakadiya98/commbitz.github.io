@@ -6,6 +6,7 @@
   }
   .login-content-part.refer-information{
     margin: 60px auto 20px;
+    max-width: 1100px;
   }
   .login-content-part.refer-information .main-form-part{
     padding: 50px 100px;

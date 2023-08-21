@@ -10,7 +10,7 @@
 .offers-page .first-section .container .content-first h2 {
   font-size: 100px;
   line-height: 96px;
-  width: 50%;
+  width: 60%;
   font-family: "Rajdhani";
 }
 .offers-page .offers-tags {
@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 80%;
+  max-width: 100%;
   gap: 10px;
 }
 .offers-tags div p {

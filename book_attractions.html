@@ -78,7 +78,7 @@
         </div>
     </header>
     <section class="bg-black text-light first-section section-margin-top banner-section">
-        <div class='container'>
+        <div class='container theme-width'>
             <div class='content-first'>
                 <h2 class="home-section-title">Explore a world<br /> of delight</h2>
                 <form class="input-box" onsubmit="handleSubmit()">
@@ -339,7 +339,46 @@
             }
         });
     </script>
+    <script src="./assets/Js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        var countries = [
+            { name: "United States", flag: "./assets/images/tab-flag/Group 2256.png" },
+            { name: "China", flag: "./assets/images/tab-flag/Group 2267.png" },
+            { name: "India", flag: "./assets/images/tab-flag/Group 2253.png" },
+            { name: "Fuji", flag: "./assets/images/tab-flag/Group 1889.png" }
+        ];
 
+        function populateDropdown() {
+            var dropdown = document.getElementById("countryFlag");
+
+            countries.forEach(function (country) {
+                var option = document.createElement("option");
+                option.value = country.name.toLowerCase();
+                option.text = country.name;
+                option.dataset.image = country.flag;
+                dropdown.appendChild(option);
+            });
+        }
+
+        window.addEventListener("load", populateDropdown);
+
+        $(document).ready(function () {
+            $('#countryFlag').select2({
+                templateResult: formatOptionflag,
+                templateSelection: formatOptionflag
+            });
+        });
+
+        function formatOptionflag(option) {
+            if (!option.id) {
+                return option.text;
+            }
+
+            var $option = $('<span><img src="' + $(option.element).data('image') + '" class="select2-flag" /> </span>');
+            return $option;
+        }
+    </script>
 </body>
 
 </html>

@@ -20,7 +20,7 @@
 <body>
     <header class="bg-black">
         <nav class="navbar navbar-expand-lg navbar-dark" id="sticky">
-            <div class='container'>
+            <div class='container theme-width'>
                 <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -53,35 +53,9 @@
                 </div>
             </div>
         </nav>
-
-        <div class="container d-flex justify-content-center mt-3 second-header">
-            <nav class="navbar">
-                <ul class="navbar-nav header-link-list d-flex gap-3 text-light ps-0 flex-wrap ">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./book_attractions.html">Book Attractions<span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./program-error.html">Banking</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./partners.html">Partners</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./offers.html">Offers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./about-us.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./program-error.html">Reach Us</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
     </header>
     <section class="login-content-part language-information">
-        <div class="container">
+        <div class="container theme-width">
             <div class="main-form-part">
                 <button class="close-modal-btn">
                     <img src="./assets/images/close-modal.svg" alt="close" />
@@ -183,6 +157,7 @@
         </div>
     </section>
     <script src="./assets/Js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./assets/Js/bootstrap.bundle.min.js"></script>
     <script>
         window.addEventListener('scroll', function () {
@@ -195,6 +170,44 @@
                 navbar.classList.remove('sticky-nav');
             }
         });
+    </script>
+    <script>
+        var countries = [
+            { name: "United States", flag: "./assets/images/tab-flag/Group 2256.png" },
+            { name: "China", flag: "./assets/images/tab-flag/Group 2267.png" },
+            { name: "India", flag: "./assets/images/tab-flag/Group 2253.png" },
+            { name: "Fuji", flag: "./assets/images/tab-flag/Group 1889.png" }
+        ];
+
+        function populateDropdown() {
+            var dropdown = document.getElementById("countryFlag");
+
+            countries.forEach(function (country) {
+                var option = document.createElement("option");
+                option.value = country.name.toLowerCase();
+                option.text = country.name;
+                option.dataset.image = country.flag;
+                dropdown.appendChild(option);
+            });
+        }
+
+        window.addEventListener("load", populateDropdown);
+
+        $(document).ready(function () {
+            $('#countryFlag').select2({
+                templateResult: formatOptionflag,
+                templateSelection: formatOptionflag
+            });
+        });
+
+        function formatOptionflag(option) {
+            if (!option.id) {
+                return option.text;
+            }
+
+            var $option = $('<span><img src="' + $(option.element).data('image') + '" class="select2-flag" /> </span>');
+            return $option;
+        }
     </script>
 </body>
 

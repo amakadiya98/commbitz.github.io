@@ -142,7 +142,7 @@
 }
 .fifth-section .partnership-card {
   display: flex;
-  max-width: 85%;
+  max-width: 1200px;
   background-color: white;
   border: 5px solid var(--primary);
   border-radius: 30px;
