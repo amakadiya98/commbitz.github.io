@@ -1498,7 +1498,7 @@
     <section class="customer-review-section d-flex flex-column align-items-center section-margin-top">
         <div class="container theme-width">
             <h1 class="home3-section-title fw-normal text-center">Customer Reviews</h1>
-            <div class="reviews-container d-flex position-relative justify-content-center theme-width">
+            <div class="reviews-container d-flex position-relative justify-content-center theme-width mt-5">
                 <div class="d-flex align-items-center flex-column customer-card">
                     <div class="rounded-circle profile-image-container">
                         <img src="./assets/images/homePage/person-3.png" alt="person">
@@ -1567,13 +1567,9 @@
                     </div>
                 </div>
             </div>
-            <img src='./assets/images/homePage/top-left.png' alt='top-left-line' class="top-left" />
-            <img src='./assets/images/homePage/middle-top.png' alt='middle-top-line' class="middle-top" />
-            <img src='./assets/images/homePage/middle-bottom.png' alt='middle-bottom-line' class="middle-bottom" />
-            <img src='./assets/images/homePage/right-middle.png' alt='right-middle-line' class="right-middle" />
         </div>
     </section>
-    <section class="container section-margin-top partner-with-us theme-width">
+    <section class="container section-margin-top partner-with-us theme-width mt-5">
         <h1 class="home3-section-title d-flex flex-column align-items-center fw-normal">Partner with us</h1>
         <div class="row partner-raw">
             <div class="col-md-4 partner-box">
@@ -1702,13 +1698,10 @@
             </div>
         </div>
     </section>
-    <section class="d-flex download-app green-mobile-container">
-        <img src="./assets/images/download-section-bottom-left.png" alt="left-corner" class="left-img"/>
-        <img src="./assets/images/download-section-bottom-right.png" alt="right-corner" class="right-img"/>
-        <img src="./assets/images/download-section-bottom-middle.png" alt="middle-bottom" class="dot-img"/>
-        <img src="./assets/images/download-section-middle.png" alt="download-main" class="mobile-img"/>
+    <section class="d-flex download-app">
+        <img src="./assets/images/homePage/mobile-round-back.png" alt="back" class="mobile-back-image">
         <div class="container">
-            <div class="d-flex justify-content-end content theme-width">
+            <div class="d-flex justify-content-end content">
                 <div class="text-part">
                     <h2>Download the app now</h2>
                     <p>Enjoy a range of benefits as you go beyond connectivity made easy.</p>
@@ -1845,7 +1838,7 @@
             var navbar = document.getElementById("sticky");
             var scrollPosition = window.scrollY;
 
-            if (scrollPosition > 100) {
+            if (scrollPosition > 50) {
                 navbar.classList.add('sticky-nav');
             } else {
                 navbar.classList.remove('sticky-nav');
